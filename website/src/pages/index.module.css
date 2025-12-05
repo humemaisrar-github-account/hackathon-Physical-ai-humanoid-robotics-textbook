@@ -1,0 +1,45 @@
+.heroBanner {
+  display: flex;           /* Make it a flex container */
+  flex-direction: column;  /* Stack children vertically */
+  justify-content: center; /* Vertical center */
+  align-items: center;     /* Horizontal center */
+  min-height: 80vh;        /* Take most of the viewport height */
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: #589d96; /* Updated hero background */
+  background-image: none;
+  color: white;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+    min-height: 60vh;
+  }
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Space between multiple buttons if added */
+  margin-top: 2rem;
+}
+.features {
+  padding: 4rem 2rem; /* More spacing for readability */
+  width: 100%;
+  background-color: var(--ifm-background-color);
+  text-align: center;   /* Ensure content is centered */
+}
+
+.features h2 {
+  margin-bottom: 1rem;
+}
+
+.features p, .features ul {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}

@@ -1,55 +1,55 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+---
+Sync Impact Report
+---
+- Version Change: 1.0.0 → 1.1.0
+- Added Principles:
+  - I. Interdisciplinary Collaboration
+  - II. Ethical AI Development
+  - III. Robustness & Safety Engineering
+  - IV. Human-Robot Interaction (HRI) Design
+  - V. Continuous Learning & Adaptation
+- Added Sections:
+  - Technical Standards
+  - Research & Development Workflow
+- Modified Sections:
+  - Governance
+- Templates Requiring Review:
+  - ⚠ .specify/templates/plan-template.md
+  - ⚠ .specify/templates/spec-template.md
+  - ⚠ .specify/templates/tasks-template.md
+- Follow-up TODOs:
+  - TODO(RATIFICATION_DATE): Set original adoption date.
+-->
+# Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Interdisciplinary Collaboration
+Promote cross-domain integration between AI, robotics, biomechanics, cognitive science, simulation engineering, design, and ethics. Encourage collaborative authoring between humans and AI agents using agent-native workflows.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Ethical AI Development
+Mandate ethical considerations for every chapter and technical guide. Include principles of human well-being, transparency, autonomy, privacy, fairness, bias detection, and accountability in all content. Require that examples involving humanoids reflect responsible AI deployment.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Robustness & Safety Engineering
+Highlight reliability, safety, and risk-mitigation as foundational aspects of robotics and humanoid system design. Emphasize safety testing, failure mode analysis, physical constraints, simulation-based validation, and real-world robustness. Chapters must teach students safe operations in ROS 2, Isaac, Gazebo, and real hardware.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Human-Robot Interaction (HRI) Design
+Promote intuitive, natural, predictable, and trust-driven interaction patterns. Require discussion of psychological, social, ergonomic, and cultural considerations in humanoid design. Include guidelines for multimodal interfaces—vision, speech, gestures, touch, and language models.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Continuous Learning & Adaptation
+Articulate principles for systems that learn, adapt, and evolve using physical experience and simulation reinforcement. Include coverage of self-improving pipelines, domain randomization, VLA models, and embodied learning loops.
 
-### [PRINCIPLE_6_NAME]
+## Technical Standards
 
+Use of ROS 2, URDF, Gazebo/Unity, and NVIDIA Isaac as foundational ecosystem tools. Detail hardware-software co-design standards for humanoids, documentation templates for motion planning, perception pipelines, safety protocols, and simulation configurations. Define versioning, reproducibility, and GitHub Pages deployment requirements.
 
-[PRINCIPLE__DESCRIPTION]
+## Research & Development Workflow
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Define a hypothesis-driven chapter development process. Enforce iterative agent-assisted writing cycles with peer review between human authors and Claude Code subagents. Establish standards for knowledge transfer, citation, and reproducible pedagogy.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Define author, reviewer, and AI subagent roles and responsibilities. Describe the decision-making process for curriculum updates and establish quality benchmarks for diagrams, code blocks, simulations, and HRI examples. All contributions must align with this Constitution before being merged into the master branch.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): Set original adoption date. | **Last Amended**: 2025-12-04
