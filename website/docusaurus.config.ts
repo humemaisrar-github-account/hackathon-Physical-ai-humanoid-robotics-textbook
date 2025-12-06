@@ -127,6 +127,10 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/humemaisrar-github-account/hackathon-Physical-ai-humanoid-robotics-textbook', // Placeholder
             },
+            {
+              label: 'LinkedIn',
+              href: 'www.linkedin.com/in/humema-israr-b184342b5', // Placeholder
+            },
           ],
         },
       ],
