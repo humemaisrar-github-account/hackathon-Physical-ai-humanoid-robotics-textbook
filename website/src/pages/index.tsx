@@ -28,7 +28,7 @@ function HomepageHeader() {
           </div>
         </div>
         <div className={styles.heroImageContainer}>
-          <img src="/img/favicon.ico" alt="Physical AI Logo" className={styles.heroImage} />
+          <img src="/img/robo.jpg" alt="Physical AI Logo" className={styles.heroImage} />
         </div>
       </div>
     </header>
