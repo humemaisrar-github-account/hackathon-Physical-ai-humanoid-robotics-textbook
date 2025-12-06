@@ -129,7 +129,7 @@ const config: Config = {
             },
             {
               label: 'LinkedIn',
-              href: 'www.linkedin.com/in/humema-israr-b184342b5', // Placeholder
+              href: 'https://www.linkedin.com/in/humema-israr-b184342b5', // Placeholder
             },
           ],
         },
