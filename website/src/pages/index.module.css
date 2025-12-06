@@ -199,8 +199,8 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0; /* Prevent image container from shrinking */
-  width: 250px; /* Fixed width */
-  height: 250px; /* Fixed height */
+  width: 300px; /* Increased width */
+  height: 300px; /* Increased height */
   margin-left: 2rem; /* Space from text content */
 }
 
@@ -234,8 +234,8 @@
 
   .heroImageContainer {
     margin-left: 0;
-    width: 200px;
-    height: 200px;
+    width: 250px; /* Increased responsive width */
+    height: 250px; /* Increased responsive height */
   }
 }
 
