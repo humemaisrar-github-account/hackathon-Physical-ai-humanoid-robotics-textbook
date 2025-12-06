@@ -89,7 +89,7 @@ const config: Config = {
         },
         {to: '/docs/glossary', label: 'Glossary', position: 'left'},
         {
-          href: 'https://github.com/gemini-agi/physical-ai-textbook', // Placeholder for actual repo
+          href: 'https://github.com/humemaisrar-github-account/hackathon-Physical-ai-humanoid-robotics-textbook', // Placeholder for actual repo
           label: 'GitHub',
           position: 'right',
         },
@@ -116,7 +116,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Discussions',
-              href: 'https://github.com/humemaisrar-github-account', // Placeholder
+              href: 'https://github.com/humemaisrar-github-account/hackathon-Physical-ai-humanoid-robotics-textbook', // Placeholder
             },
           ],
         },
@@ -125,7 +125,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/humemaisrar-github-account/hackathon-Physical-ai-&humanoid-robotics-textbook', // Placeholder
+              href: 'https://github.com/humemaisrar-github-account/hackathon-Physical-ai-humanoid-robotics-textbook', // Placeholder
             },
           ],
         },
