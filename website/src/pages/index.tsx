@@ -84,7 +84,7 @@ function CapstoneProject() {
           Integrate your skills to build a complete project: an autonomous humanoid robot in a simulated environment
           that can understand and execute natural language commands.
         </p>
-        <Link className={clsx('button button--primary button--lg', styles.capstoneButton)} to="/docs/capstone/1-capstone-overview/">
+        <Link className={clsx('button button--primary button--lg', styles.capstoneButton)} to="/">
           Explore the Capstone
         </Link>
       </div>
