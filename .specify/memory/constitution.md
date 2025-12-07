@@ -2,18 +2,22 @@
 ---
 Sync Impact Report
 ---
-- Version Change: 1.0.0 → 1.1.0
-- Added Principles:
-  - I. Interdisciplinary Collaboration
-  - II. Ethical AI Development
-  - III. Robustness & Safety Engineering
-  - IV. Human-Robot Interaction (HRI) Design
-  - V. Continuous Learning & Adaptation
-- Added Sections:
+- Version Change: 1.1.0 → 1.0.0 (Complete rewrite for new RAG chatbot component)
+- Removed Sections:
+  - Core Principles (I-V)
   - Technical Standards
   - Research & Development Workflow
-- Modified Sections:
   - Governance
+- Added Sections:
+  - system
+  - goals
+  - restrictions
+  - memory_policy
+  - rag
+  - apis
+  - agents
+  - ui
+  - testing
 - Templates Requiring Review:
   - ⚠ .specify/templates/plan-template.md
   - ⚠ .specify/templates/spec-template.md
@@ -21,35 +25,71 @@ Sync Impact Report
 - Follow-up TODOs:
   - TODO(RATIFICATION_DATE): Set original adoption date.
 -->
-# Physical AI & Humanoid Robotics Constitution
+# Physical AI & Humanoid Robotics Book — RAG Chatbot Constitution
+# Version: 1.0.0
 
-## Core Principles
+**Ratified**: TODO(RATIFICATION_DATE): Set original adoption date. | **Last Amended**: 2025-12-07
 
-### I. Interdisciplinary Collaboration
-Promote cross-domain integration between AI, robotics, biomechanics, cognitive science, simulation engineering, design, and ethics. Encourage collaborative authoring between humans and AI agents using agent-native workflows.
+## 1. System Identity
+- **name**: humanoid-rag-chatbot
+- **description**: >
+    A Retrieval-Augmented Generation (RAG) chatbot integrated inside the
+    Physical AI & Humanoid Robotics textbook. The chatbot answers questions
+    strictly based on the book’s content and selected text chosen by the user.
+    It uses FastAPI, OpenAI Chat/Agents SDK, Neon Serverless Postgres,
+    Qdrant Vector Database, and the Gemini CLI for ingestion and retrieval.
 
-### II. Ethical AI Development
-Mandate ethical considerations for every chapter and technical guide. Include principles of human well-being, transparency, autonomy, privacy, fairness, bias detection, and accountability in all content. Require that examples involving humanoids reflect responsible AI deployment.
+## 2. Core Goals
+- Provide accurate answers ONLY based on book content.
+- When a user highlights/selects text in the book, restrict answers to that text.
+- Provide citations and paragraph references from retrieved chunks.
+- Never hallucinate; respond with “Not found in the book” if info is missing.
+- Enable smooth integration with Docusaurus front-end chat widget.
 
-### III. Robustness & Safety Engineering
-Highlight reliability, safety, and risk-mitigation as foundational aspects of robotics and humanoid system design. Emphasize safety testing, failure mode analysis, physical constraints, simulation-based validation, and real-world robustness. Chapters must teach students safe operations in ROS 2, Isaac, Gazebo, and real hardware.
+## 3. Restrictions & Guardrails
+- No opinion generation unless explicitly asked.
+- No external internet knowledge unless allowed in query.
+- Must not generate unsafe, harmful, or irrelevant content.
+- Cannot modify book content; only analyze it.
+- If user tries personal/private queries → politely decline.
 
-### IV. Human-Robot Interaction (HRI) Design
-Promote intuitive, natural, predictable, and trust-driven interaction patterns. Require discussion of psychological, social, ergonomic, and cultural considerations in humanoid design. Include guidelines for multimodal interfaces—vision, speech, gestures, touch, and language models.
+## 4. Memory & State Policy
+- No long-term memory of users.
+- Only keep message context within the session.
+- Do not store personal user data.
 
-### V. Continuous Learning & Adaptation
-Articulate principles for systems that learn, adapt, and evolve using physical experience and simulation reinforcement. Include coverage of self-improving pipelines, domain randomization, VLA models, and embodied learning loops.
+## 5. RAG Pipeline Standards
+- **embedding_model**: "gemini-embedding-001"
+- **chunking**:
+  - size: 800
+  - overlap: 150
+- **vector_db**: "qdrant"
+- **postgres_db**: "neon"
+- **retrieval**:
+  - top_k: 5
+  - distance: cosine
 
-## Technical Standards
+## 6. API Contracts
+- **fastapi_routes**:
+  - `/api/ingest`
+  - `/api/query`
+  - `/api/chat`
 
-Use of ROS 2, URDF, Gazebo/Unity, and NVIDIA Isaac as foundational ecosystem tools. Detail hardware-software co-design standards for humanoids, documentation templates for motion planning, perception pipelines, safety protocols, and simulation configurations. Define versioning, reproducibility, and GitHub Pages deployment requirements.
+## 7. Agentic Behavior
+- **reasoning**: "structured"
+- **fallback**: "search_again"
 
-## Research & Development Workflow
+## 8. User Interface
+- **chat_widget**:
+  - location: bottom-right
+  - features:
+    - floating_button
+    - popup_window
+    - streaming_response
+    - error_alerts
 
-Define a hypothesis-driven chapter development process. Enforce iterative agent-assisted writing cycles with peer review between human authors and Claude Code subagents. Establish standards for knowledge transfer, citation, and reproducible pedagogy.
-
-## Governance
-
-Define author, reviewer, and AI subagent roles and responsibilities. Describe the decision-making process for curriculum updates and establish quality benchmarks for diagrams, code blocks, simulations, and HRI examples. All contributions must align with this Constitution before being merged into the master branch.
-
-**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): Set original adoption date. | **Last Amended**: 2025-12-04
+## 9. Testing & Validation
+- Ask 10 random questions from each section.
+- Ask questions from user-selected paragraphs.
+- Validate no hallucinations.
+- Ensure top-k retrieval always references correct text.
