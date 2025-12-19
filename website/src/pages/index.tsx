@@ -7,6 +7,7 @@ import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import { Book, Compass, Cpu, Layers } from 'lucide-react';
 import type { JSX } from 'react';
+import ChatbotWidget from '../components/HomepageFeatures/ChatbotWidget';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -99,6 +100,7 @@ export default function Home(): JSX.Element {
       title={`Physical AI & Humanoid Robotics`}
       description="An open-source textbook on the convergence of robotics, artificial intelligence, and embodied cognition.">
       <HomepageHeader />
+      <ChatbotWidget />
       <main>
         <HomepageFeatures />
         <LearningPath />
