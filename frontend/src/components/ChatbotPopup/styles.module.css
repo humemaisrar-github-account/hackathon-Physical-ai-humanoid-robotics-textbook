@@ -1,0 +1,142 @@
+.chatbotWrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  transform: translateZ(0);
+}
+
+.popupContainer {
+  position: absolute;
+  bottom: 80px; /* 60px button height + 20px spacing */
+  right: 0;
+  width: 320px; /* As requested */
+  height: 420px; /* As requested */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364,#1c3d52);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggleButton {
+  position: relative; /* Changed from fixed */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364,#1c3d52);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 26px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  /* z-index is inherited from wrapper */
+}
+
+.header {
+  padding: 10px;
+  border-bottom: 1px solid #203a43;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f2027; /* Header background */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.messageArea {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.messageBubble {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block; /* To make bubble fit content */
+  max-width: 80%; /* Limit bubble width */
+  word-wrap: break-word; /* Break long words */
+}
+
+.userBubble {
+  background: #203a43;
+  text-align: right;
+  float: right; /* Align to right */
+  clear: both; /* Clear floats */
+}
+
+.botBubble {
+  background: #2c5364;
+  text-align: left;
+  float: left; /* Align to left */
+  clear: both; /* Clear floats */
+}
+
+.inputArea {
+  display: flex;
+  border-top: 1px solid #203a43;
+  padding: 10px;
+  background-color: #0f2027; /* Input area background */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.messageInput {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background: #203a43; /* Input background */
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.sendButton {
+  padding: 8px 15px;
+  border: none;
+  background: #2c5364;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.loadingIndicator {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #cccccc;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .chatbotWrapper {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .popupContainer {
+    width: 280px;
+    height: 380px;
+    bottom: 75px; /* Adjust for smaller button height + spacing */
+  }
+
+  .toggleButton {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
