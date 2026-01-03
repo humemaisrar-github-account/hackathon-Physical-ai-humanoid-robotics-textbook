@@ -1,0 +1,40 @@
+{
+  "url": "https://local-content/tutorial-basics/create-a-document",
+  "title": "Create A Document",
+  "content": "---\nsidebar_position: 2\n---\n\n# Create a Document\n\nDocuments are **groups of pages** connected through:\n\n- a **sidebar**\n- **previous/next navigation**\n- **versioning**\n\n## Create your first Doc\n\nCreate a Markdown file at `docs/hello.md`:\n\n```md title=\"docs/hello.md\"\n# Hello\n\nThis is my **first Docusaurus document**!\n```\n\nA new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).\n\n## Configure the Sidebar\n\nDocusaurus automatically **creates a sidebar** from the `docs` folder.\n\nAdd metadata to customize the sidebar label and position:\n\n```md title=\"docs/hello.md\" {1-4}\n---\nsidebar_label: 'Hi!'\nsidebar_position: 3\n---\n\n# Hello\n\nThis is my **first Docusaurus document**!\n```\n\nIt is also possible to create your sidebar explicitly in `sidebars.js`:\n\n```js title=\"sidebars.js\"\nexport default {\n  tutorialSidebar: [\n    'intro',\n    // highlight-next-line\n    'hello',\n    {\n      type: 'category',\n      label: 'Tutorial',\n      items: ['tutorial-basics/create-a-document'],\n    },\n  ],\n};\n```\n",
+  "text_content": "Create a Document Documents are groups of pages connected through: - a sidebar - previous/next navigation - versioning Create your first Doc Create a Markdown file at docs/hello.md: A new document is now available at http://localhost:3000/docs/hello. Configure the Sidebar Docusaurus automatically creates a sidebar from the docs folder. Add metadata to customize the sidebar label and position: It is also possible to create your sidebar explicitly in sidebars.js:",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Create a Document",
+      "path": "create-a-document.md > Create a Document",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "Create your first Doc",
+      "path": "create-a-document.md > Create your first Doc",
+      "position": 8
+    },
+    {
+      "level": 1,
+      "text": "Hello",
+      "path": "create-a-document.md > Hello",
+      "position": 13
+    },
+    {
+      "level": 2,
+      "text": "Configure the Sidebar",
+      "path": "create-a-document.md > Configure the Sidebar",
+      "position": 20
+    },
+    {
+      "level": 1,
+      "text": "Hello",
+      "path": "create-a-document.md > Hello",
+      "position": 32
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.879226",
+  "status": "SUCCESS"
+}

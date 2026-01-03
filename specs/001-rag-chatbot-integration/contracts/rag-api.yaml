@@ -1,0 +1,360 @@
+openapi: 3.0.3
+info:
+  title: RAG Chatbot API
+  description: API for the Integrated Retrieval-Augmented Generation (RAG) Chatbot for AI-Native Textbook
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000/api
+    description: Development server
+paths:
+  /rag/chat:
+    post:
+      summary: Send a message to the RAG chatbot
+      description: Submit a question to the RAG system and receive a response based on textbook content
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - message
+                - session_id
+              properties:
+                message:
+                  type: string
+                  description: The user's question or message
+                  example: "What is the main concept of neural networks?"
+                session_id:
+                  type: string
+                  description: Unique identifier for the chat session
+                  example: "sess_12345"
+                mode:
+                  type: string
+                  enum: [book-wide, selected-text-only]
+                  description: Question answering mode
+                  default: book-wide
+                selected_text:
+                  type: string
+                  description: Text selected by the user (required for selected-text-only mode)
+                  example: "Neural networks are computing systems..."
+      responses:
+        '200':
+          description: Successful response from the chatbot
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - response
+                  - session_id
+                  - sources
+                properties:
+                  response:
+                    type: string
+                    description: The chatbot's response
+                    example: "Neural networks are computing systems..."
+                  session_id:
+                    type: string
+                    description: The session identifier
+                  sources:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        chapter:
+                          type: string
+                          description: Chapter where the information was found
+                        section:
+                          type: string
+                          description: Section within the chapter
+                        content:
+                          type: string
+                          description: The retrieved content snippet
+                        relevance_score:
+                          type: number
+                          description: Relevance score of the source
+        '400':
+          description: Bad request - missing required fields
+        '500':
+          description: Internal server error
+  /rag/query:
+    post:
+      summary: Query the RAG system with selected text context
+      description: Submit a question with selected text context for more focused answers
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+                - selected_text
+              properties:
+                query:
+                  type: string
+                  description: The user's question
+                  example: "Explain this concept in more detail?"
+                selected_text:
+                  type: string
+                  description: The text the user has selected
+                  example: "Machine learning is a subset of artificial intelligence..."
+                user_id:
+                  type: string
+                  description: Optional user ID for personalization
+      responses:
+        '200':
+          description: Successful response with answer based on selected text
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - answer
+                  - context_used
+                properties:
+                  answer:
+                    type: string
+                    description: The answer generated based on selected text
+                  context_used:
+                    type: array
+                    items:
+                      type: string
+                    description: List of context chunks used to generate the answer
+        '400':
+          description: Bad request - missing required fields
+        '500':
+          description: Internal server error
+  /auth/register:
+    post:
+      summary: Register a new user
+      description: Register a new user and collect their background information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+                - name
+              properties:
+                email:
+                  type: string
+                  format: email
+                  description: User's email address
+                password:
+                  type: string
+                  format: password
+                  description: User's password
+                name:
+                  type: string
+                  description: User's full name
+                software_background:
+                  type: object
+                  description: User's software development background
+                  properties:
+                    experience_level:
+                      type: string
+                      enum: [beginner, intermediate, expert]
+                    domains:
+                      type: array
+                      items:
+                        type: string
+                      description: Software domains of expertise
+                hardware_background:
+                  type: object
+                  description: User's hardware background
+                  properties:
+                    experience_level:
+                      type: string
+                      enum: [beginner, intermediate, expert]
+                    domains:
+                      type: array
+                      items:
+                        type: string
+                      description: Hardware domains of expertise
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - user_id
+                  - token
+                properties:
+                  user_id:
+                    type: string
+                    description: The new user's ID
+                  token:
+                    type: string
+                    description: Authentication token
+        '400':
+          description: Bad request - invalid input
+        '409':
+          description: Conflict - user already exists
+        '500':
+          description: Internal server error
+  /auth/login:
+    post:
+      summary: Login a user
+      description: Authenticate a user and return an access token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                  description: User's email address
+                password:
+                  type: string
+                  format: password
+                  description: User's password
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - user_id
+                  - token
+                properties:
+                  user_id:
+                    type: string
+                    description: The user's ID
+                  token:
+                    type: string
+                    description: Authentication token
+        '401':
+          description: Unauthorized - invalid credentials
+        '500':
+          description: Internal server error
+  /personalization/chapter/{chapter_id}:
+    get:
+      summary: Get personalized chapter content
+      description: Retrieve a chapter personalized based on user's background
+      parameters:
+        - name: chapter_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the chapter to personalize
+        - name: user_id
+          in: query
+          required: true
+          schema:
+            type: string
+          description: ID of the authenticated user
+      responses:
+        '200':
+          description: Personalized chapter content
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - original_content
+                  - personalized_content
+                  - personalization_metadata
+                properties:
+                  original_content:
+                    type: string
+                    description: Original chapter content
+                  personalized_content:
+                    type: string
+                    description: Personalized version of the chapter
+                  personalization_metadata:
+                    type: object
+                    description: Metadata about the personalization applied
+        '401':
+          description: Unauthorized - user not authenticated
+        '403':
+          description: Forbidden - user not authorized for this resource
+        '404':
+          description: Chapter not found
+        '500':
+          description: Internal server error
+  /translation/urdu:
+    post:
+      summary: Translate content to Urdu
+      description: Translate textbook content to Urdu while preserving formatting
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - content
+                - chapter_id
+              properties:
+                content:
+                  type: string
+                  description: The content to translate
+                chapter_id:
+                  type: string
+                  description: ID of the chapter being translated
+                user_id:
+                  type: string
+                  description: ID of the authenticated user requesting translation
+      responses:
+        '200':
+          description: Content translated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - urdu_translation
+                  - translation_metadata
+                properties:
+                  urdu_translation:
+                    type: string
+                    description: The content translated to Urdu
+                  translation_metadata:
+                    type: object
+                    description: Metadata about the translation quality and confidence
+        '401':
+          description: Unauthorized - user not authenticated
+        '403':
+          description: Forbidden - user not authorized for translation
+        '500':
+          description: Internal server error
+  /health:
+    get:
+      summary: Health check endpoint
+      description: Check the health status of the API
+      responses:
+        '200':
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - status
+                properties:
+                  status:
+                    type: string
+                    enum: [healthy]
+                    description: Health status
+                  timestamp:
+                    type: string
+                    format: date-time
+                    description: Timestamp of the health check
+        '500':
+          description: API is unhealthy

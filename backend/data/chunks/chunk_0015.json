@@ -1,0 +1,12 @@
+{
+  "chunk_id": "35f5f8f6-1685-42b1-9e49-c95dbfc5eaa0",
+  "page_url": "https://local-content/module1/chapter4x",
+  "heading_path": "",
+  "content_raw": "<Exercise> <p>Write a ROS 2 Python node that makes your simulated robot drive in a circle. You will need to publish a Twist message with a constant linear.x and a constant angular.z.</p> </Exercise> <Outcome> <p>You can now make a robot move! This is a fundamental skill that you will build upon in the coming chapters.</p> </Outcome> <SuccessCriteria> <ul> <li>Drive a simulated robot around in Gazebo using a keyboard teleoperation node.</li> <li>Write a Python script that makes the robot drive in a square.</li> <li>Explain the structure of a Twist message.</li> </ul> </SuccessCriteria>",
+  "token_count": 147,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

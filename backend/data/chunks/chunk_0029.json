@@ -1,0 +1,12 @@
+{
+  "chunk_id": "21969668-a98f-43a3-b749-c8f7d8c8293d",
+  "page_url": "https://local-content/module3/chapter2x",
+  "heading_path": "",
+  "content_raw": "exert a limited amount of force, so they cannot injure a person even if a collision occurs. - Predictive Models: Using models of human behavior to predict a person's future movements and avoid potential collisions. <Checkpoint> <p>What is the difference between supervisory control and collaborative control?</p> </Checkpoint> <Exercise> <p>Think of a task that you do every day that could be made easier with the help of a robot. What mode of interaction would be most appropriate for this task? What are the potential safety concerns?</p> </Exercise> <Outcome> <p>You now have an appreciation for the human-centered aspects of robotics. You can think critically about how to design robots that are not only functional but also safe and easy for people to use.</p> </Outcome> <SuccessCriteria> <ul> <li>Define Human-Robot Interaction.</li> <li>List three different ways a human can interact with a robot.</li> <li>Describe a potential safety hazard in a human-robot collaborative task.</li> </ul> </SuccessCriteria>",
+  "token_count": 222,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

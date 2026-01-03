@@ -1,0 +1,12 @@
+{
+  "chunk_id": "3963f542-4ad4-4c1d-bf03-f5fea0179e6c",
+  "page_url": "https://local-content/appendix/glossary",
+  "heading_path": "",
+  "content_raw": "an image. - Service: A request-response communication mechanism in ROS. - Sim2Real: The process of transferring policies and models learned in simulation to real hardware. - SLAM (Simultaneous Localization and Mapping): A set of algorithms that allows a robot to build a map of its environment while simultaneously tracking its own position within that map. - State: In Reinforcement Learning, a representation of the current situation of the agent and the environment. - System Identification: A technique for Sim2Real transfer that involves creating a more accurate simulation model by measuring the properties of the real robot. - Teleoperation: The process of controlling a robot from a distance. - Topic: A publish-subscribe communication mechanism in ROS. - Twist: A message type in ROS used for sending velocity commands. - URDF (Unified Robot Description Format): An XML-based format for describing the kinematics and dynamics of a robot. - Vision-Language-Action (VLA) Model: A multimodal AI model that can understand vision, language, and action. - World: In Gazebo, a file that defines the simulation environment.",
+  "token_count": 224,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 2,
+  "metadata": {},
+  "status": "PENDING"
+}

@@ -1,0 +1,12 @@
+{
+  "chunk_id": "9d0fa5dc-5f8e-425a-8cb7-b4c921a87db4",
+  "page_url": "https://local-content/module3/chapter3x",
+  "heading_path": "",
+  "content_raw": "connecting the symbols of language (like the word \"red\") to the real world (the actual color red as perceived by a camera). For a VLA to be effective, it must learn to ground language in its sensory experience of the world. <Checkpoint> <p>What makes a VLA different from a standard Large Language Model (LLM)?</p> </Checkpoint> <Exercise> <p>Read a recent research paper on a Vision-Language-Action model. What was the main contribution of the paper? What task was the model able to perform? What were the limitations of the model?</p> </Exercise> <Outcome> <p>You are now familiar with the cutting-edge of AI research in robotics. You can appreciate the immense potential of VLAs to create more intelligent, capable, and user-friendly robots.</p> </Outcome> <SuccessCriteria> <ul> <li>Explain the three components of a VLA model.</li> <li>Give an example of a natural language command that could be given to a VLA-powered robot.</li> <li>Describe the 'grounding' problem in the context of VLAs.</li> </ul> </SuccessCriteria>",
+  "token_count": 245,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

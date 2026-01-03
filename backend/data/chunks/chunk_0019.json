@@ -1,0 +1,12 @@
+{
+  "chunk_id": "ec381163-7742-4cae-8194-469a5bea90d3",
+  "page_url": "https://local-content/module2/chapter1x",
+  "heading_path": "",
+  "content_raw": "the readings of a real IMU, often with configurable noise models to make the simulation more realistic. <Checkpoint> <p>What is the role of a Gazebo plugin in sensor simulation?</p> </Checkpoint> <Exercise> <p>Add a camera sensor to the front of your simulated robot's chassis. Configure the gazeboroscamera plugin to publish images to a ROS 2 topic. Use RViz2 to visualize the camera feed.</p> </Exercise> <Outcome> <p>Your simulated robot can now \"see\" the world! This is the first step towards building autonomous robots that can perceive and react to their environment.</p> </Outcome> <SuccessCriteria> <ul> <li>Add a camera to a URDF and view the image feed in RViz2.</li> <li>Add a LiDAR sensor and visualize the point cloud data.</li> <li>Explain the role of a Gazebo sensor plugin.</li> </ul> </SuccessCriteria>",
+  "token_count": 205,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://local-content/_templates/frontmatterx",
+  "title": "[Chapter Title]",
+  "content": "---\ntitle: [Chapter Title]\nsummary: [Brief summary of the chapter]\ntags: [tag1, tag2, ...]\nkeywords: [keyword1, keyword2, ...]\nlearningObjectives:\n  - [Objective 1]\n  - [Objective 2]\nprerequisites: [List of prerequisite knowledge or chapters]\noutcome: [What the reader will be able to do after completing the chapter]\nsuccessCriteria:\n  - [Criteria 1 (measurable)]\n  - [Criteria 2 (measurable)]\ntoolsUsed: [ROS 2, Gazebo, ...]\nrelatedConcepts: [kinematics, perception, ...]\n---\n",
+  "text_content": "",
+  "headings": [],
+  "created_at": "2025-12-17T04:38:11.891733",
+  "status": "SUCCESS"
+}

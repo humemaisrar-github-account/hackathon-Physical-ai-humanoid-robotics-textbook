@@ -1,0 +1,12 @@
+{
+  "chunk_id": "e49d060f-327b-4b0b-8796-d1b2c21d6d56",
+  "page_url": "https://local-content/module4/chapter4x",
+  "heading_path": "",
+  "content_raw": "experiment and replaying it in a simulator to debug the problem. - rqt_console: A GUI tool for viewing and filtering log messages from all the nodes in the system. <Checkpoint> <p>What is the purpose of a ROS 2 launch file?</p> </Checkpoint> <Exercise> <p>Create a ROS 2 package that contains two nodes: a talker and a listener. Write a launch file that starts both nodes and remaps the topic they use to communicate. Run the launch file and verify that the nodes are communicating correctly.</p> </Exercise> <Outcome> <p>You now have the skills to take your robotics applications out of the lab and into the real world. You can package, deploy, and maintain your ROS 2 systems on real robots.</p> </Outcome> <SuccessCriteria> <ul> <li>Create a ROS 2 package for a simple application.</li> <li>Write a launch file that starts multiple nodes with remapped topics.</li> <li>Use ros2 bag to record and replay data from a running ROS 2 system.</li> </ul> </SuccessCriteria>",
+  "token_count": 233,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

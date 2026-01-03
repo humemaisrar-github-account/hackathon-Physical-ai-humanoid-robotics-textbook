@@ -1,0 +1,12 @@
+{
+  "chunk_id": "455dcfca-5a2b-4dbe-8cf9-c44f933df6f9",
+  "page_url": "https://local-content/tutorial-basics/create-a-page",
+  "heading_path": "",
+  "content_raw": "Create a Page Add Markdown or React files to src/pages to create a standalone page: - src/pages/index.js → localhost:3000/ - src/pages/foo.md → localhost:3000/foo - src/pages/foo/bar.js → localhost:3000/foo/bar Create your first React Page Create a file at src/pages/my-react-page.js: A new page is now available at http://localhost:3000/my-react-page. Create your first Markdown Page Create a file at src/pages/my-markdown-page.md: A new page is now available at http://localhost:3000/my-markdown-page.",
+  "token_count": 120,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 0,
+  "metadata": {},
+  "status": "PENDING"
+}

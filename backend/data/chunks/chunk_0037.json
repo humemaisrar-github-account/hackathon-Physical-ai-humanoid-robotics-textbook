@@ -1,0 +1,12 @@
+{
+  "chunk_id": "e1b823b8-804c-442d-819c-bacbda8824d4",
+  "page_url": "https://local-content/module4/chapter3x",
+  "heading_path": "",
+  "content_raw": "the most information about the environment in the least amount of time. This is often framed as a \"next-best-view\" problem, where the robot must decide where to go next to see the most new territory. <Checkpoint> <p>What is the main advantage of a decentralized approach to multi-robot coordination?</p> </Checkpoint> <Exercise> <p>Read about the different exploration algorithms available in the Nav2 stack. Choose one of the algorithms and run it in a simulated environment. Observe how the robot chooses its path to explore the unknown space.</p> </Exercise> <Outcome> <p>You are now aware of some of the most challenging and interesting research problems in robot navigation. These are the areas where the next generation of robotics breakthroughs will happen.</p> </Outcome> <SuccessCriteria> <ul> <li>Describe a challenge of long-term robot operation.</li> <li>Explain the difference between centralized and decentralized multi-robot coordination.</li> <li>Define the goal of an exploration algorithm.</li> </ul> </SuccessCriteria>",
+  "token_count": 221,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

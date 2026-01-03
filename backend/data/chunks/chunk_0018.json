@@ -1,0 +1,12 @@
+{
+  "chunk_id": "d4b44911-044c-4f8a-be77-17d00ff0cd1f",
+  "page_url": "https://local-content/module2/chapter1x",
+  "heading_path": "",
+  "content_raw": "import Prerequisites from '@site/src/components/Prerequisites'; import LearningObjective from '@site/src/components/LearningObjective'; import Outcome from '@site/src/components/Outcome'; import SuccessCriteria from '@site/src/components/SuccessCriteria'; import Exercise from '@site/src/components/Exercise'; import Checkpoint from '@site/src/components/Checkpoint'; Chapter 1: Sensor Integration in Simulation This chapter covers the integration of common sensors like cameras, LiDAR, and IMUs in a simulation environment. <Prerequisites> <p>You should have a robot model in URDF and be able to spawn it in Gazebo.</p> </Prerequisites> <LearningObjective> <ul> <li>Understand how sensors are simulated in Gazebo.</li> <li>Learn how to add a camera, LiDAR, and IMU to a URDF model.</li> <li>Be able to visualize sensor data in RViz2.</li> </ul> </LearningObjective> Gazebo Sensor Plugins In Gazebo, sensors are implemented as plugins. These plugins generate sensor data based on the state of the simulated world and publish it to ROS 2 topics. To add a sensor to your robot, you need to add a <sensor> block to your URDF or SDF file and configure the appropriate plugin. Camera A camera sensor simulates a real-world camera, publishing images to a ROS 2 topic. You can configure the camera's resolution, frame rate, and other parameters. The gazeboroscamera plugin is commonly used for this. LiDAR A LiDAR (Light Detection and Ranging) sensor measures distances by emitting laser beams. In Gazebo, a LiDAR sensor plugin simulates this by casting rays into the environment and calculating the distances to objects. The data is typically published as a sensormsgs/msg/LaserScan or sensormsgs/msg/PointCloud2 message. IMU An IMU (Inertial Measurement Unit) measures a robot's orientation, angular velocity, and linear acceleration. A Gazebo IMU plugin simulates the readings of a real IMU, often with configurable noise models to make the simulation more realistic. <Checkpoint> <p>What is the role of a Gazebo plugin in sensor simulation?</p> </Checkpoint> <Exercise> <p>Add a camera sensor to the front of your simulated robot's chassis. Configure the gazeboroscamera plugin to publish images",
+  "token_count": 500,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 0,
+  "metadata": {},
+  "status": "PENDING"
+}

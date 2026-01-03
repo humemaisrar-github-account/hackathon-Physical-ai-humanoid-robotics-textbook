@@ -1,0 +1,52 @@
+{
+  "url": "https://local-content/capstone/autonomous-humanoidx",
+  "title": "Capstone Project: The Autonomous Humanoid",
+  "content": "---\ntitle: \"Capstone Project: The Autonomous Humanoid\"\nsummary: \"Integrate your knowledge from the entire textbook to build a simulated autonomous humanoid robot that can navigate its environment and interact with objects.\"\ntags: [capstone, project, humanoid-robotics, autonomous-systems, ros2]\nkeywords: [capstone, project, humanoid-robotics, autonomous-systems, ros, nav2, moveit, perception, grasping]\nlearningObjectives:\n  - \"Apply the concepts learned throughout the textbook to a large-scale project.\"\n  - \"Gain experience in system integration and debugging.\"\n  - \"Develop a complete, autonomous robotics application from scratch.\"\nprerequisites: [\"All previous chapters\"]\noutcome: \"Readers will have a fully functional simulated humanoid robot that demonstrates a wide range of autonomous capabilities.\"\nsuccessCriteria:\n  - \"Successfully build and launch the humanoid robot simulation.\"\n  - \"Command the robot to navigate to a specified location in the environment.\"\n  - \"Command the robot to pick up and place an object.\"\ntoolsUsed: [ROS 2, Gazebo, Nav2, MoveIt]\nrelatedConcepts: [systems-engineering, project-management, software-architecture, robotics]\n---\nimport Prerequisites from '@site/src/components/Prerequisites';\nimport LearningObjective from '@site/src/components/LearningObjective';\nimport Outcome from '@site/src/components/Outcome';\nimport SuccessCriteria from '@site/src/components/SuccessCriteria';\nimport Exercise from '@site/src/components/Exercise';\nimport Checkpoint from '@site/src/components/Checkpoint';\n\n# Capstone Project: The Autonomous Humanoid\n\nThis capstone project is your opportunity to bring together everything you have learned in this textbook to build a complete autonomous humanoid robot.\n\n<Prerequisites>\n  <p>You should have completed all the previous chapters and exercises in this textbook.</p>\n</Prerequisites>\n\n<LearningObjective>\n  <ul>\n    <li>Apply the concepts learned throughout the textbook to a large-scale project.</li>\n    <li>Gain experience in system integration and debugging.</li>\n    <li>Develop a complete, autonomous robotics application from scratch.</li>\n  </ul>\n</LearningObjective>\n\n## Project Goal\n\nThe goal of this project is to build and program a simulated humanoid robot that can:\n\n1.  Navigate autonomously in a cluttered indoor environment.\n2.  Perceive objects in its environment.\n3.  Pick up a specified object.\n4.  Place the object at a specified location.\n\n## Project Phases\n\nThis project is divided into four phases:\n\n### Phase 1: Robot Design and Simulation\n\nIn this phase, you will design the URDF model for your humanoid robot and create a Gazebo world for it to live in. Your robot should have at least two arms with grippers, a head with a camera, and a mobile base.\n\n### Phase 2: Navigation\n\nIn this phase, you will integrate the Nav2 stack to give your robot the ability to navigate autonomously. You will need to configure the costmaps, planners, and controllers for a humanoid robot.\n\n### Phase 3: Perception\n\nIn this phase, you will add a perception system to your robot. This will involve using a pre-trained object detection model to identify objects in the camera feed.\n\n### Phase 4: Manipulation\n\nIn this phase, you will use MoveIt to control the robot's arms. You will write a script that uses the output of your perception system to plan and execute a pick-and-place task.\n\n<Checkpoint>\n  <p>What are the four main phases of the capstone project?</p>\n</Checkpoint>\n\n<Exercise>\n  <p>This entire project is an exercise! Good luck!</p>\n</Exercise>\n\n<Outcome>\n  <p>Congratulations! You have built a complete autonomous humanoid robot. You have gained valuable experience in all aspects of robotics software development, from low-level control to high-level AI. You are now well-equipped to tackle a wide range of challenges in the exciting field of robotics.</p>\n</Outcome>\n\n<SuccessCriteria>\n  <ul>\n    <li>Successfully build and launch the humanoid robot simulation.</li>\n    <li>Command the robot to navigate to a specified location in the environment.</li>\n    <li>Command the robot to pick up and place an object.</li>\n  </ul>\n</SuccessCriteria>\n",
+  "text_content": "import Prerequisites from '@site/src/components/Prerequisites'; import LearningObjective from '@site/src/components/LearningObjective'; import Outcome from '@site/src/components/Outcome'; import SuccessCriteria from '@site/src/components/SuccessCriteria'; import Exercise from '@site/src/components/Exercise'; import Checkpoint from '@site/src/components/Checkpoint'; Capstone Project: The Autonomous Humanoid This capstone project is your opportunity to bring together everything you have learned in this textbook to build a complete autonomous humanoid robot. <Prerequisites> <p>You should have completed all the previous chapters and exercises in this textbook.</p> </Prerequisites> <LearningObjective> <ul> <li>Apply the concepts learned throughout the textbook to a large-scale project.</li> <li>Gain experience in system integration and debugging.</li> <li>Develop a complete, autonomous robotics application from scratch.</li> </ul> </LearningObjective> Project Goal The goal of this project is to build and program a simulated humanoid robot that can: 1. Navigate autonomously in a cluttered indoor environment. 2. Perceive objects in its environment. 3. Pick up a specified object. 4. Place the object at a specified location. Project Phases This project is divided into four phases: Phase 1: Robot Design and Simulation In this phase, you will design the URDF model for your humanoid robot and create a Gazebo world for it to live in. Your robot should have at least two arms with grippers, a head with a camera, and a mobile base. Phase 2: Navigation In this phase, you will integrate the Nav2 stack to give your robot the ability to navigate autonomously. You will need to configure the costmaps, planners, and controllers for a humanoid robot. Phase 3: Perception In this phase, you will add a perception system to your robot. This will involve using a pre-trained object detection model to identify objects in the camera feed. Phase 4: Manipulation In this phase, you will use MoveIt to control the robot's arms. You will write a script that uses the output of your perception system to plan and execute a pick-and-place task. <Checkpoint> <p>What are the four main phases of the capstone project?</p> </Checkpoint> <Exercise> <p>This entire project is an exercise! Good luck!</p> </Exercise> <Outcome> <p>Congratulations! You have built a complete autonomous humanoid robot. You have gained valuable experience in all aspects of robotics software development, from low-level control to high-level AI. You are now well-equipped to tackle a wide range of challenges in the exciting field of robotics.</p> </Outcome> <SuccessCriteria> <ul> <li>Successfully build and launch the humanoid robot simulation.</li> <li>Command the robot to navigate to a specified location in the environment.</li> <li>Command the robot to pick up and place an object.</li> </ul> </SuccessCriteria>",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Capstone Project: The Autonomous Humanoid",
+      "path": "autonomous-humanoid.mdx > Capstone Project: The Autonomous Humanoid",
+      "position": 7
+    },
+    {
+      "level": 2,
+      "text": "Project Goal",
+      "path": "autonomous-humanoid.mdx > Project Goal",
+      "position": 23
+    },
+    {
+      "level": 2,
+      "text": "Project Phases",
+      "path": "autonomous-humanoid.mdx > Project Phases",
+      "position": 32
+    },
+    {
+      "level": 3,
+      "text": "Phase 1: Robot Design and Simulation",
+      "path": "autonomous-humanoid.mdx > Phase 1: Robot Design and Simulation",
+      "position": 36
+    },
+    {
+      "level": 3,
+      "text": "Phase 2: Navigation",
+      "path": "autonomous-humanoid.mdx > Phase 2: Navigation",
+      "position": 40
+    },
+    {
+      "level": 3,
+      "text": "Phase 3: Perception",
+      "path": "autonomous-humanoid.mdx > Phase 3: Perception",
+      "position": 44
+    },
+    {
+      "level": 3,
+      "text": "Phase 4: Manipulation",
+      "path": "autonomous-humanoid.mdx > Phase 4: Manipulation",
+      "position": 48
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.856421",
+  "status": "SUCCESS"
+}

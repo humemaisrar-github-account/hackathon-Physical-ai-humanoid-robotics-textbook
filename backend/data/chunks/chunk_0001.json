@@ -1,0 +1,12 @@
+{
+  "chunk_id": "6743cfde-343f-489a-807c-4beca853c3ab",
+  "page_url": "https://local-content/intro",
+  "heading_path": "",
+  "content_raw": ", we will use a variety of powerful software tools to design, simulate, and program our robots. Here are some of the key tools you will become familiar with: - Docusaurus: The framework this textbook is built on. It allows for the creation of beautiful and interactive documentation websites. - Robot Operating System (ROS 2): The standard open-source framework for robotics software development. It provides a rich ecosystem of tools and libraries for building complex robot applications. - Gazebo: A powerful and widely used 3D robotics simulator that integrates seamlessly with ROS. - Unity and NVIDIA Isaac Sim: Advanced simulation platforms that offer high-fidelity graphics and physics, enabling the creation of highly realistic and complex simulation environments. Get ready to embark on a fascinating journey into the world of intelligent robots. Let's begin!",
+  "token_count": 162,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

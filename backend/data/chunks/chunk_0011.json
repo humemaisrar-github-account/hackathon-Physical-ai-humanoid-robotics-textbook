@@ -1,0 +1,12 @@
+{
+  "chunk_id": "74d7d775-5a2e-40e3-9762-a2f88e147ba4",
+  "page_url": "https://local-content/module1/chapter2x",
+  "heading_path": "",
+  "content_raw": "URDF file for a robot with a single arm that rotates at the shoulder. Use the check_urdf tool to verify your file, and then visualize it in RViz2.</p> </Exercise> <Outcome> <p>You can now create basic representations of robots for use in ROS and Gazebo.</p> </Outcome> <SuccessCriteria> <ul> <li>Create a URDF file for a simple two-wheeled robot.</li> <li>Explain the difference between a link and a joint.</li> <li>Load and visualize a URDF model in RViz2.</li> </ul> </SuccessCriteria>",
+  "token_count": 133,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://local-content/intro",
+  "title": "Introduction to Physical AI and Humanoid Robotics",
+  "content": "---\ntitle: \"Introduction to Physical AI and Humanoid Robotics\"\nsummary: \"An overview of Physical AI, Humanoid Robotics, and Embodied Intelligence, along with course objectives and an introduction to the tools used in this textbook.\"\ntags: [introduction, physical-ai, humanoid-robotics, embodied-intelligence, ros2, gazebo]\nkeywords: [physical ai, humanoid robotics, embodied intelligence, robotics, ai, ros, gazebo, simulation]\nlearningObjectives:\n  - \"Understand the fundamental concepts of Physical AI, Humanoid Robotics, and Embodied Intelligence.\"\n  - \"Identify the key learning objectives of the course.\"\n  - \"Recognize the primary software and tools that will be used throughout the textbook.\"\nprerequisites: [\"Basic understanding of programming concepts (Python recommended).\", \"Familiarity with Linux-based operating systems is helpful but not required.\"]\noutcome: \"Readers will have a foundational understanding of the field of Physical AI and the scope of the textbook.\"\nsuccessCriteria:\n  - \"Define Physical AI and Embodied Intelligence in your own words.\"\n  - \"List the main modules of the course.\"\n  - \"Name at least three software tools that will be used in the labs.\"\ntoolsUsed: [Docusaurus, ROS 2, Gazebo, Unity, NVIDIA Isaac Sim]\nrelatedConcepts: [artificial-intelligence, robotics, machine-learning, computer-vision, simulation]\nsidebar_position: 1\n---\n\n# Introduction to Physical AI and Humanoid Robotics\n\nWelcome to the exciting world of Physical AI and Humanoid Robotics! This textbook will guide you through the fundamental concepts, tools, and techniques required to understand, build, and simulate intelligent robots that can interact with the physical world.\n\n## What is Physical AI?\n\n**Physical AI** is a field of artificial intelligence focused on creating agents that can perceive, reason about, and interact with their physical environment. Unlike purely digital AI (like chatbots or game-playing AI), Physical AI is embodied, meaning it exists within a physical system, such as a robot. This embodiment brings a unique set of challenges and opportunities, as the AI must deal with the complexities and uncertainties of the real world, such as physics, sensor noise, and unexpected events.\n\n## The Rise of Humanoid Robotics\n\n**Humanoid robotics** is a subfield of robotics focused on creating robots with a human-like form and capabilities. The humanoid form factor is particularly interesting because our world is designed for humans. A robot that can navigate stairs, open doors, and use human tools has the potential to seamlessly integrate into our society and assist with a wide range of tasks.\n\n## Embodied Intelligence\n\n**Embodied Intelligence** is the core concept that connects Physical AI and humanoid robotics. It is the idea that intelligence is not just about abstract reasoning but is deeply intertwined with physical experience. An embodied agent learns and understands the world through its physical interactions. For example, it learns about gravity by experiencing its effects, and it learns how to grasp an object by trying, failing, and succeeding.\n\n## Course Objectives\n\nThis textbook is designed to provide you with a comprehensive understanding of Physical AI and humanoid robotics. By the end of this course, you will be able to:\n\n-   Understand the fundamental principles of robotics, including kinematics, dynamics, and control.\n-   Model and simulate humanoid robots in realistic environments using industry-standard tools.\n-   Implement perception algorithms to enable robots to \"see\" and understand their surroundings.\n-   Apply machine learning techniques, such as reinforcement learning, to train intelligent robot behaviors.\n-   Integrate various components to build a complete, autonomous humanoid robot in simulation.\n\n## Introduction to Tools\n\nThroughout this textbook, we will use a variety of powerful software tools to design, simulate, and program our robots. Here are some of the key tools you will become familiar with:\n\n-   **Docusaurus:** The framework this textbook is built on. It allows for the creation of beautiful and interactive documentation websites.\n-   **Robot Operating System (ROS 2):** The standard open-source framework for robotics software development. It provides a rich ecosystem of tools and libraries for building complex robot applications.\n-   **Gazebo:** A powerful and widely used 3D robotics simulator that integrates seamlessly with ROS.\n-   **Unity and NVIDIA Isaac Sim:** Advanced simulation platforms that offer high-fidelity graphics and physics, enabling the creation of highly realistic and complex simulation environments.\n\nGet ready to embark on a fascinating journey into the world of intelligent robots. Let's begin!",
+  "text_content": "Introduction to Physical AI and Humanoid Robotics Welcome to the exciting world of Physical AI and Humanoid Robotics! This textbook will guide you through the fundamental concepts, tools, and techniques required to understand, build, and simulate intelligent robots that can interact with the physical world. What is Physical AI? Physical AI is a field of artificial intelligence focused on creating agents that can perceive, reason about, and interact with their physical environment. Unlike purely digital AI (like chatbots or game-playing AI), Physical AI is embodied, meaning it exists within a physical system, such as a robot. This embodiment brings a unique set of challenges and opportunities, as the AI must deal with the complexities and uncertainties of the real world, such as physics, sensor noise, and unexpected events. The Rise of Humanoid Robotics Humanoid robotics is a subfield of robotics focused on creating robots with a human-like form and capabilities. The humanoid form factor is particularly interesting because our world is designed for humans. A robot that can navigate stairs, open doors, and use human tools has the potential to seamlessly integrate into our society and assist with a wide range of tasks. Embodied Intelligence Embodied Intelligence is the core concept that connects Physical AI and humanoid robotics. It is the idea that intelligence is not just about abstract reasoning but is deeply intertwined with physical experience. An embodied agent learns and understands the world through its physical interactions. For example, it learns about gravity by experiencing its effects, and it learns how to grasp an object by trying, failing, and succeeding. Course Objectives This textbook is designed to provide you with a comprehensive understanding of Physical AI and humanoid robotics. By the end of this course, you will be able to: - Understand the fundamental principles of robotics, including kinematics, dynamics, and control. - Model and simulate humanoid robots in realistic environments using industry-standard tools. - Implement perception algorithms to enable robots to \"see\" and understand their surroundings. - Apply machine learning techniques, such as reinforcement learning, to train intelligent robot behaviors. - Integrate various components to build a complete, autonomous humanoid robot in simulation. Introduction to Tools Throughout this textbook, we will use a variety of powerful software tools to design, simulate, and program our robots. Here are some of the key tools you will become familiar with: - Docusaurus: The framework this textbook is built on. It allows for the creation of beautiful and interactive documentation websites. - Robot Operating System (ROS 2): The standard open-source framework for robotics software development. It provides a rich ecosystem of tools and libraries for building complex robot applications. - Gazebo: A powerful and widely used 3D robotics simulator that integrates seamlessly with ROS. - Unity and NVIDIA Isaac Sim: Advanced simulation platforms that offer high-fidelity graphics and physics, enabling the creation of highly realistic and complex simulation environments. Get ready to embark on a fascinating journey into the world of intelligent robots. Let's begin!",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Introduction to Physical AI and Humanoid Robotics",
+      "path": "intro.md > Introduction to Physical AI and Humanoid Robotics",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "What is Physical AI?",
+      "path": "intro.md > What is Physical AI?",
+      "position": 4
+    },
+    {
+      "level": 2,
+      "text": "The Rise of Humanoid Robotics",
+      "path": "intro.md > The Rise of Humanoid Robotics",
+      "position": 8
+    },
+    {
+      "level": 2,
+      "text": "Embodied Intelligence",
+      "path": "intro.md > Embodied Intelligence",
+      "position": 12
+    },
+    {
+      "level": 2,
+      "text": "Course Objectives",
+      "path": "intro.md > Course Objectives",
+      "position": 16
+    },
+    {
+      "level": 2,
+      "text": "Introduction to Tools",
+      "path": "intro.md > Introduction to Tools",
+      "position": 26
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.853234",
+  "status": "SUCCESS"
+}

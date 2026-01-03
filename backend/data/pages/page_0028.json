@@ -1,0 +1,46 @@
+{
+  "url": "https://local-content/tutorial-extras/translate-your-site",
+  "title": "Translate Your Site",
+  "content": "---\nsidebar_position: 2\n---\n\n# Translate your site\n\nLet's translate `docs/intro.md` to French.\n\n## Configure i18n\n\nModify `docusaurus.config.js` to add support for the `fr` locale:\n\n```js title=\"docusaurus.config.js\"\nexport default {\n  i18n: {\n    defaultLocale: 'en',\n    locales: ['en', 'fr'],\n  },\n};\n```\n\n## Translate a doc\n\nCopy the `docs/intro.md` file to the `i18n/fr` folder:\n\n```bash\nmkdir -p i18n/fr/docusaurus-plugin-content-docs/current/\n\ncp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md\n```\n\nTranslate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.\n\n## Start your localized site\n\nStart your site on the French locale:\n\n```bash\nnpm run start -- --locale fr\n```\n\nYour localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.\n\n:::caution\n\nIn development, you can only use one locale at a time.\n\n:::\n\n## Add a Locale Dropdown\n\nTo navigate seamlessly across languages, add a locale dropdown.\n\nModify the `docusaurus.config.js` file:\n\n```js title=\"docusaurus.config.js\"\nexport default {\n  themeConfig: {\n    navbar: {\n      items: [\n        // highlight-start\n        {\n          type: 'localeDropdown',\n        },\n        // highlight-end\n      ],\n    },\n  },\n};\n```\n\nThe locale dropdown now appears in your navbar:\n\n![Locale Dropdown](./img/localeDropdown.png)\n\n## Build your localized site\n\nBuild your site for a specific locale:\n\n```bash\nnpm run build -- --locale fr\n```\n\nOr build your site to include all the locales at once:\n\n```bash\nnpm run build\n```\n",
+  "text_content": "Translate your site Let's translate docs/intro.md to French. Configure i18n Modify docusaurus.config.js to add support for the fr locale: Translate a doc Copy the docs/intro.md file to the i18n/fr folder: Translate i18n/fr/docusaurus-plugin-content-docs/current/intro.md in French. Start your localized site Start your site on the French locale: Your localized site is accessible at http://localhost:3000/fr/ and the Getting Started page is translated. :::caution In development, you can only use one locale at a time. ::: Add a Locale Dropdown To navigate seamlessly across languages, add a locale dropdown. Modify the docusaurus.config.js file: The locale dropdown now appears in your navbar: !Locale Dropdown Build your localized site Build your site for a specific locale: Or build your site to include all the locales at once:",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Translate your site",
+      "path": "translate-your-site.md > Translate your site",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "Configure i18n",
+      "path": "translate-your-site.md > Configure i18n",
+      "position": 4
+    },
+    {
+      "level": 2,
+      "text": "Translate a doc",
+      "path": "translate-your-site.md > Translate a doc",
+      "position": 17
+    },
+    {
+      "level": 2,
+      "text": "Start your localized site",
+      "path": "translate-your-site.md > Start your localized site",
+      "position": 29
+    },
+    {
+      "level": 2,
+      "text": "Add a Locale Dropdown",
+      "path": "translate-your-site.md > Add a Locale Dropdown",
+      "position": 45
+    },
+    {
+      "level": 2,
+      "text": "Build your localized site",
+      "path": "translate-your-site.md > Build your localized site",
+      "position": 71
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.891605",
+  "status": "SUCCESS"
+}

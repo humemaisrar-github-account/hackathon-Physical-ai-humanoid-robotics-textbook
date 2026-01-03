@@ -1,0 +1,12 @@
+{
+  "chunk_id": "36817ce0-1f18-4c1c-b58d-0a0f46f54891",
+  "page_url": "https://local-content/appendix/troubleshootingx",
+  "heading_path": "",
+  "content_raw": "Troubleshooting This page provides solutions to common problems you may encounter while working through this textbook. ROS 2 Installation Issues - Problem: ros2 command not found. - Solution: Make sure you have sourced your ROS 2 installation. You should add source /opt/ros/<distro>/setup.bash to your ~/.bashrc file (replace <distro> with your ROS 2 distribution, e.g., humble). Gazebo Issues - Problem: Gazebo is running very slowly. - Solution: Gazebo can be computationally intensive. Make sure you are running it on a computer with a dedicated graphics card. You can also try reducing the realtimeupdate_rate in your world file. - Problem: My robot model falls through the floor in Gazebo. - Solution: This is usually caused by incorrect collision geometry in your URDF/SDF file. Make sure that all the links in your model have a <collision> tag with valid geometry. Nav2 Issues - Problem: The robot is not moving when I send a navigation goal. - Solution: There are many possible causes for this. Check the following: - Is the Nav2 stack running correctly? - Is the robot localized correctly in the map? - Is there a valid path from the robot's current position to the goal? - Are the costmap parameters configured correctly? MoveIt Issues - Problem: MoveIt is unable to find an IK solution. - Solution: This can happen if the desired pose is unreachable or if the IK solver is not configured correctly. Try moving the goal pose to a different location. You can also try a different IK solver.",
+  "token_count": 328,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 0,
+  "metadata": {},
+  "status": "PENDING"
+}

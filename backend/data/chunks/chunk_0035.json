@@ -1,0 +1,12 @@
+{
+  "chunk_id": "ecc80371-9fea-4deb-b335-acc947bd03b6",
+  "page_url": "https://local-content/module4/chapter2x",
+  "heading_path": "",
+  "content_raw": "ppers: These grippers use vacuum to pick up objects. They are particularly well-suited for flat, smooth surfaces. Grasp Planning Grasp planning is the problem of determining how to position the gripper to achieve a stable grasp on an object. This is a complex problem that depends on the geometry of the object, the properties of the gripper, and the task to be performed. In MoveIt, grasp planning can be automated using the MoveGroup interface. <Checkpoint> <p>What are the seven stages of a typical pick-and-place pipeline?</p> </Checkpoint> <Exercise> <p>Use the MoveIt MoveGroup Python interface to write a script that commands your simulated robot to perform a complete pick-and-place operation on a simple object (like a can or a box) in Gazebo.</p> </Exercise> <Outcome> <p>You can now program a robot to manipulate objects in its environment. This is a key skill for a wide range of robotics applications, from manufacturing to logistics to assistive robotics.</p> </Outcome> <SuccessCriteria> <ul> <li>Describe the stages of a pick-and-place operation.</li> <li>Explain the difference between a parallel-jaw gripper and a suction gripper.</li> <li>Use MoveIt to command a robot arm to grasp an object in simulation.</li> </ul> </SuccessCriteria>",
+  "token_count": 286,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

@@ -1,0 +1,12 @@
+{
+  "chunk_id": "87b26e48-6273-4bfc-8e70-3f2d9d42f667",
+  "page_url": "https://local-content/module4/chapter2x",
+  "heading_path": "",
+  "content_raw": "import Prerequisites from '@site/src/components/Prerequisites'; import LearningObjective from '@site/src/components/LearningObjective'; import Outcome from '@site/src/components/Outcome'; import SuccessCriteria from '@site/src/components/SuccessCriteria'; import Exercise from '@site/src/components/Exercise'; import Checkpoint from '@site/src/components/Checkpoint'; Chapter 2: Robot Arm Manipulation and Grasping This chapter covers the fundamentals of robot arm manipulation and grasping. <Prerequisites> <p>You should be familiar with the MoveIt motion planning framework and have a simulated robot arm running in Gazebo.</p> </Prerequisites> <LearningObjective> <ul> <li>Understand the challenges of robotic grasping.</li> <li>Learn about different types of grippers.</li> <li>Be able to plan and execute a pick-and-place task using MoveIt.</li> </ul> </LearningObjective> The Pick-and-Place Pipeline A typical pick-and-place task can be broken down into the following stages: 1. Perception: Identify the object to be picked up and determine its pose (position and orientation). 2. Planning (Approach): Plan a collision-free path for the gripper to approach the object. 3. Grasping: Close the gripper to grasp the object. 4. Planning (Lift): Plan a path to lift the object. 5. Planning (Move): Plan a path to move the object to the desired place location. 6. Placing: Open the gripper to release the object. 7. Planning (Retreat): Plan a path to move the arm back to a home position. Gripper Types The gripper (or end-effector) is the part of the robot that physically interacts with the object. There are many different types of grippers, each with its own advantages and disadvantages. Two common types are: - Parallel-Jaw Grippers: These grippers have two fingers that move in parallel to grasp an object. They are simple and effective for a wide range of objects. - Suction Grippers: These grippers use vacuum to pick up objects. They are particularly well-suited for flat, smooth surfaces. Grasp Planning Grasp planning is the problem of determining how to position the gripper to achieve a stable grasp on an object. This is a complex problem that depends on the geometry of the object, the properties of the gripper, and the task to",
+  "token_count": 500,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 0,
+  "metadata": {},
+  "status": "PENDING"
+}

@@ -1,0 +1,12 @@
+{
+  "chunk_id": "3a4631e1-5b41-48b2-8d38-84f8e27d4845",
+  "page_url": "https://local-content/module2/chapter4x",
+  "heading_path": "",
+  "content_raw": "to move from its current configuration to a goal configuration. - 3D Perception: Using sensor data to build a representation of the environment for collision avoidance. <Checkpoint> <p>Why is Inverse Kinematics considered a \"hard\" problem compared to Forward Kinematics?</p> </Checkpoint> <Exercise> <p>Work through the MoveIt tutorials. Launch the MoveIt setup for a demo robot arm in RViz. Use the interactive markers to drag the end-effector to a new pose and visualize the planned trajectory.</p> </Exercise> <Outcome> <p>You now understand the fundamental concepts behind controlling robot arms and manipulators. You are ready to start building applications that can interact with the world in a more sophisticated way.</p> </Outcome> <SuccessCriteria> <ul> <li>Explain what the 'end-effector' of a robot arm is.</li> <li>Describe why the IK problem can have multiple solutions.</li> <li>Use MoveIt to plan and execute a simple trajectory for a robot arm in RViz.</li> </ul> </SuccessCriteria>",
+  "token_count": 227,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

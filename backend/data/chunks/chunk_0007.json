@@ -1,0 +1,12 @@
+{
+  "chunk_id": "f065fadc-333a-4fb0-b17e-4f348033e715",
+  "page_url": "https://local-content/capstone/autonomous-humanoidx",
+  "heading_path": "",
+  "content_raw": "a script that uses the output of your perception system to plan and execute a pick-and-place task. <Checkpoint> <p>What are the four main phases of the capstone project?</p> </Checkpoint> <Exercise> <p>This entire project is an exercise! Good luck!</p> </Exercise> <Outcome> <p>Congratulations! You have built a complete autonomous humanoid robot. You have gained valuable experience in all aspects of robotics software development, from low-level control to high-level AI. You are now well-equipped to tackle a wide range of challenges in the exciting field of robotics.</p> </Outcome> <SuccessCriteria> <ul> <li>Successfully build and launch the humanoid robot simulation.</li> <li>Command the robot to navigate to a specified location in the environment.</li> <li>Command the robot to pick up and place an object.</li> </ul> </SuccessCriteria>",
+  "token_count": 189,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

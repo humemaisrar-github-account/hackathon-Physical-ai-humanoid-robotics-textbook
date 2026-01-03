@@ -1,0 +1,12 @@
+{
+  "chunk_id": "406b8814-2055-4ba9-beb0-acc85f976ae6",
+  "page_url": "https://local-content/module3/chapter1x",
+  "heading_path": "",
+  "content_raw": "Exercise> <p>Use the OpenAI Gym library to train a simple RL agent to solve the \"CartPole\" problem. Experiment with different hyperparameters (like the learning rate and discount factor) and observe how they affect the agent's performance.</p> </Exercise> <Outcome> <p>You now have a foundational understanding of how reinforcement learning can be used to train intelligent agents. You are ready to explore how these techniques can be applied to more complex robotics problems.</p> </Outcome> <SuccessCriteria> <ul> <li>Define the five core components of an RL problem.</li> <li>Explain the purpose of a reward function.</li> <li>Describe a robotics problem that could be solved using RL.</li> </ul> </SuccessCriteria>",
+  "token_count": 160,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

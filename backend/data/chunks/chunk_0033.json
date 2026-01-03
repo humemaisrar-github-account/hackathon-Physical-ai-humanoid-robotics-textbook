@@ -1,0 +1,12 @@
+{
+  "chunk_id": "b6c8a7b5-42f7-4321-9958-7684169d4adf",
+  "page_url": "https://local-content/module4/chapter1x",
+  "heading_path": "",
+  "content_raw": "the real world. System Identification System identification is an alternative approach to Sim2Real. Instead of making the simulation more varied, system identification aims to make the simulation more accurate. It involves running experiments on the real robot to measure its physical properties (e.g., mass, friction, motor constants) and then using these measurements to create a more realistic simulation model. <Checkpoint> <p>What is the main difference in philosophy between domain randomization and system identification?</p> </Checkpoint> <Exercise> <p>If you have access to a physical robot, try to perform a simple system identification experiment. For example, you could measure the friction of the robot's wheels by tilting the surface it's on and measuring the angle at which it starts to slide.</p> </Exercise> <Outcome> <p>You are now aware of the significant challenges involved in taking a robot from simulation to the real world. You can think critically about how to design training procedures that will lead to robust, transferable policies.</p> </Outcome> <SuccessCriteria> <ul> <li>Explain what the 'reality gap' is.</li> <li>Describe the main idea behind domain randomization.</li> <li>Give an example of a parameter that could be identified using system identification.</li> </ul> </SuccessCriteria>",
+  "token_count": 271,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

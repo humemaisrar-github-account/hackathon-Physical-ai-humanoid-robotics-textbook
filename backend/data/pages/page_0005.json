@@ -1,0 +1,46 @@
+{
+  "url": "https://local-content/module1/chapter1x",
+  "title": "ROS 2 Basics",
+  "content": "---\ntitle: \"ROS 2 Basics\"\nsummary: \"A comprehensive introduction to the fundamental concepts of ROS 2, the backbone of modern robotics applications.\"\ntags: [ros2, robotics, nodes, topics, services, actions]\nkeywords: [ros, ros2, robotics, software, nodes, topics, services, actions, pub-sub]\nlearningObjectives:\n  - \"Understand the core components of a ROS 2 system.\"\n  - \"Explain the role of nodes, topics, services, and actions.\"\n  - \"Be able to run and inspect a simple ROS 2 system.\"\nprerequisites: [\"Introduction to Physical AI and Humanoid Robotics\"]\noutcome: \"Readers will be able to design and understand simple ROS 2 applications based on the key communication patterns.\"\nsuccessCriteria:\n  - \"Successfully run a ROS 2 talker and listener.\"\n  - \"Use the `ros2` command-line tool to inspect topics and services.\"\n  - \"Draw a diagram illustrating the difference between topics and services.\"\ntoolsUsed: [ROS 2]\nrelatedConcepts: [robotics-software, publish-subscribe, request-response, asynchronous-actions]\n---\nimport Prerequisites from '@site/src/components/Prerequisites';\nimport LearningObjective from '@site/src/components/LearningObjective';\nimport Outcome from '@site/src/components/Outcome';\nimport SuccessCriteria from '@site/src/components/SuccessCriteria';\nimport Exercise from '@site/src/components/Exercise';\nimport Checkpoint from '@site/src/components/Checkpoint';\n\n# Chapter 1: ROS 2 Basics\n\nThis chapter will cover the basics of the Robot Operating System (ROS 2), including nodes, topics, services, and actions.\n\n<Prerequisites>\n  <p>Before you begin, you should have a basic understanding of programming concepts and be familiar with the Linux command line.</p>\n</Prerequisites>\n\n<LearningObjective>\n  <ul>\n    <li>Understand the core components of a ROS 2 system.</li>\n    <li>Explain the role of nodes, topics, services, and actions.</li>\n    <li>Be able to run and inspect a simple ROS 2 system.</li>\n  </ul>\n</LearningObjective>\n\n## The ROS 2 Graph\n\nAt its core, a ROS 2 system is a graph of processes (called **nodes**) that communicate with each other. This graph structure allows for modular and scalable robotics applications.\n\n```mermaid\ngraph TD\n    A[Node 1: Camera Driver] -->|Image Data| B(Node 2: Image Processor);\n    B -->|Detections| C(Node 3: Decision Maker);\n    C -->|Commands| D(Node 4: Motor Controller);\n```\n\n### Nodes\n\nA **node** is the smallest unit of execution in ROS 2. Each node should be responsible for a single, well-defined task, such as controlling a wheel, reading a sensor, or planning a path.\n\n### Topics\n\n**Topics** are named buses over which nodes exchange messages. They use a publish-subscribe communication pattern. A node can **publish** messages to a topic, and any number of other nodes can **subscribe** to that topic to receive the messages. This is a one-to-many communication mechanism.\n\n### Services\n\n**Services** are used for request-response communication. A node can offer a **service**, and another node can act as a **client** to send a request and wait for a response. This is a one-to-one communication mechanism, suitable for tasks that require a direct confirmation, like \"get the robot's current position.\"\n\n### Actions\n\n**Actions** are used for long-running tasks that provide feedback. They are similar to services but are designed for tasks that might take a significant amount of time to complete, such as navigating to a goal. An action client can send a goal to an action server, receive feedback on the progress of the goal, and get a final result.\n\n<Checkpoint>\n  <p>What is the main difference between a ROS 2 topic and a service?</p>\n</Checkpoint>\n\n<Exercise>\n  <p>Follow the official ROS 2 documentation to install ROS 2 and run the \"turtlesim\" simulator. Use the `ros2` command-line tools to move the turtle around by publishing to the `/turtle1/cmd_vel` topic.</p>\n</Exercise>\n\n<Outcome>\n  <p>You should now have a foundational understanding of the key communication mechanisms in ROS 2. You can use this knowledge to start building your own robotics applications.</p>\n</Outcome>\n\n<SuccessCriteria>\n  <ul>\n    <li>Successfully run a ROS 2 talker and listener.</li>\n    <li>Use the `ros2` command-line tool to inspect topics and services.</li>\n    <li>Draw a diagram illustrating the difference between topics and services.</li>\n  </ul>\n</SuccessCriteria>\n",
+  "text_content": "import Prerequisites from '@site/src/components/Prerequisites'; import LearningObjective from '@site/src/components/LearningObjective'; import Outcome from '@site/src/components/Outcome'; import SuccessCriteria from '@site/src/components/SuccessCriteria'; import Exercise from '@site/src/components/Exercise'; import Checkpoint from '@site/src/components/Checkpoint'; Chapter 1: ROS 2 Basics This chapter will cover the basics of the Robot Operating System (ROS 2), including nodes, topics, services, and actions. <Prerequisites> <p>Before you begin, you should have a basic understanding of programming concepts and be familiar with the Linux command line.</p> </Prerequisites> <LearningObjective> <ul> <li>Understand the core components of a ROS 2 system.</li> <li>Explain the role of nodes, topics, services, and actions.</li> <li>Be able to run and inspect a simple ROS 2 system.</li> </ul> </LearningObjective> The ROS 2 Graph At its core, a ROS 2 system is a graph of processes (called nodes) that communicate with each other. This graph structure allows for modular and scalable robotics applications. Nodes A node is the smallest unit of execution in ROS 2. Each node should be responsible for a single, well-defined task, such as controlling a wheel, reading a sensor, or planning a path. Topics Topics are named buses over which nodes exchange messages. They use a publish-subscribe communication pattern. A node can publish messages to a topic, and any number of other nodes can subscribe to that topic to receive the messages. This is a one-to-many communication mechanism. Services Services are used for request-response communication. A node can offer a service, and another node can act as a client to send a request and wait for a response. This is a one-to-one communication mechanism, suitable for tasks that require a direct confirmation, like \"get the robot's current position.\" Actions Actions are used for long-running tasks that provide feedback. They are similar to services but are designed for tasks that might take a significant amount of time to complete, such as navigating to a goal. An action client can send a goal to an action server, receive feedback on the progress of the goal, and get a final result. <Checkpoint> <p>What is the main difference between a ROS 2 topic and a service?</p> </Checkpoint> <Exercise> <p>Follow the official ROS 2 documentation to install ROS 2 and run the \"turtlesim\" simulator. Use the ros2 command-line tools to move the turtle around by publishing to the /turtle1/cmd_vel topic.</p> </Exercise> <Outcome> <p>You should now have a foundational understanding of the key communication mechanisms in ROS 2. You can use this knowledge to start building your own robotics applications.</p> </Outcome> <SuccessCriteria> <ul> <li>Successfully run a ROS 2 talker and listener.</li> <li>Use the ros2 command-line tool to inspect topics and services.</li> <li>Draw a diagram illustrating the difference between topics and services.</li> </ul> </SuccessCriteria>",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Chapter 1: ROS 2 Basics",
+      "path": "chapter1.mdx > Chapter 1: ROS 2 Basics",
+      "position": 7
+    },
+    {
+      "level": 2,
+      "text": "The ROS 2 Graph",
+      "path": "chapter1.mdx > The ROS 2 Graph",
+      "position": 23
+    },
+    {
+      "level": 3,
+      "text": "Nodes",
+      "path": "chapter1.mdx > Nodes",
+      "position": 34
+    },
+    {
+      "level": 3,
+      "text": "Topics",
+      "path": "chapter1.mdx > Topics",
+      "position": 38
+    },
+    {
+      "level": 3,
+      "text": "Services",
+      "path": "chapter1.mdx > Services",
+      "position": 42
+    },
+    {
+      "level": 3,
+      "text": "Actions",
+      "path": "chapter1.mdx > Actions",
+      "position": 46
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.857121",
+  "status": "SUCCESS"
+}

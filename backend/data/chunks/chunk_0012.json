@@ -1,0 +1,12 @@
+{
+  "chunk_id": "7b3872e4-902e-488e-95ca-185af99bea1a",
+  "page_url": "https://local-content/module1/chapter3x",
+  "heading_path": "",
+  "content_raw": "import Prerequisites from '@site/src/components/Prerequisites'; import LearningObjective from '@site/src/components/LearningObjective'; import Outcome from '@site/src/components/Outcome'; import SuccessCriteria from '@site/src/components/SuccessCriteria'; import Exercise from '@site/src/components/Exercise'; import Checkpoint from '@site/src/components/Checkpoint'; Chapter 3: Gazebo Simulation Fundamentals This chapter will introduce the Gazebo simulation environment and its fundamental concepts. <Prerequisites> <p>You should be familiar with robot modeling concepts (URDF/SDF) and have a basic understanding of ROS 2.</p> </Prerequisites> <LearningObjective> <ul> <li>Understand the role of a simulator in robotics development.</li> <li>Learn the basic components of the Gazebo interface.</li> <li>Be able to spawn a robot model in a Gazebo world.</li> </ul> </LearningObjective> Why Simulation is Essential Developing and testing on physical robots can be slow, expensive, and risky. A simulator like Gazebo provides a virtual environment where you can safely and rapidly test your robot's software. Gazebo simulates physics, sensors, and actuators, allowing you to develop your code as if it were running on a real robot. The Gazebo World A Gazebo simulation takes place in a world, which is defined in an SDF file. The world file specifies the environment, including: - Models: Robots, furniture, and other objects. - Physics: Gravity, friction, and other physical properties. - Lighting: Light sources to illuminate the scene. - Sensors: Simulated cameras, LiDAR, IMUs, etc. Interfacing with ROS 2 Gazebo integrates seamlessly with ROS 2 through a set of plugins. These plugins expose the simulator's functionality through standard ROS 2 topics, services, and actions. For example, you can control a simulated robot's joints by publishing messages to a ROS 2 topic, and you can receive simulated sensor data from another topic. <Checkpoint> <p>What is a \"world\" file in Gazebo, and what does it typically define?</p> </Checkpoint> <Exercise> <p>Launch an empty Gazebo world. Use the Gazebo GUI to add simple shapes (like a box and a sphere) to the world. Apply different materials and colors to them.</p> </Exercise> <Outcome",
+  "token_count": 500,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 0,
+  "metadata": {},
+  "status": "PENDING"
+}

@@ -1,0 +1,12 @@
+{
+  "chunk_id": "0a06ae16-a819-4221-b65d-6816c6691c97",
+  "page_url": "https://local-content/module2/chapter3x",
+  "heading_path": "",
+  "content_raw": "can efficiently replan a path when new information about the environment becomes available, without having to replan from scratch. <Checkpoint> <p>Why is it useful to separate navigation into global and local planning?</p> </Checkpoint> <Exercise> <p>Experiment with the Nav2 stack in Gazebo. Place dynamic obstacles in front of the robot while it is navigating to a goal. Observe how the local planner adjusts the robot's path to avoid the obstacles. Try changing the parameters of the local planner to make the robot more or less cautious.</p> </Exercise> <Outcome> <p>You now have a deeper understanding of the algorithms and techniques that enable robots to navigate safely and efficiently in the real world.</p> </Outcome> <SuccessCriteria> <ul> <li>Explain the difference between a global and a local planner.</li> <li>Describe how a costmap is used for path planning.</li> <li>Tune the parameters of a local planner to change a robot's obstacle avoidance behavior.</li> </ul> </SuccessCriteria>",
+  "token_count": 220,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

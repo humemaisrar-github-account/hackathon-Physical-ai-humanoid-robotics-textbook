@@ -1,0 +1,22 @@
+{
+  "url": "https://local-content/tutorial-basics/congratulations",
+  "title": "Congratulations",
+  "content": "---\nsidebar_position: 6\n---\n\n# Congratulations!\n\nYou have just learned the **basics of Docusaurus** and made some changes to the **initial template**.\n\nDocusaurus has **much more to offer**!\n\nHave **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.\n\nAnything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)\n\n## What's next?\n\n- Read the [official documentation](https://docusaurus.io/)\n- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)\n- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)\n- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)\n- Add a [search bar](https://docusaurus.io/docs/search)\n- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)\n- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)\n",
+  "text_content": "Congratulations! You have just learned the basics of Docusaurus and made some changes to the initial template. Docusaurus has much more to offer! Have 5 more minutes? Take a look at versioning and i18n. Anything unclear or buggy in this tutorial? Please report it! What's next? - Read the official documentation - Modify your site configuration with docusaurus.config.js - Add navbar and footer items with themeConfig - Add a custom Design and Layout - Add a search bar - Find inspirations in the Docusaurus showcase - Get involved in the Docusaurus Community",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Congratulations!",
+      "path": "congratulations.md > Congratulations!",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "What's next?",
+      "path": "congratulations.md > What's next?",
+      "position": 10
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.878559",
+  "status": "SUCCESS"
+}

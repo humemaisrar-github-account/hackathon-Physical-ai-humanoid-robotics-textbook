@@ -1,0 +1,34 @@
+{
+  "url": "https://local-content/tutorial-extras/manage-docs-versions",
+  "title": "Manage Docs Versions",
+  "content": "---\nsidebar_position: 1\n---\n\n# Manage Docs Versions\n\nDocusaurus can manage multiple versions of your docs.\n\n## Create a docs version\n\nRelease a version 1.0 of your project:\n\n```bash\nnpm run docusaurus docs:version 1.0\n```\n\nThe `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.\n\nYour docs now have 2 versions:\n\n- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs\n- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**\n\n## Add a Version Dropdown\n\nTo navigate seamlessly across versions, add a version dropdown.\n\nModify the `docusaurus.config.js` file:\n\n```js title=\"docusaurus.config.js\"\nexport default {\n  themeConfig: {\n    navbar: {\n      items: [\n        // highlight-start\n        {\n          type: 'docsVersionDropdown',\n        },\n        // highlight-end\n      ],\n    },\n  },\n};\n```\n\nThe docs version dropdown appears in your navbar:\n\n![Docs Version Dropdown](./img/docsVersionDropdown.png)\n\n## Update an existing version\n\nIt is possible to edit versioned docs in their respective folder:\n\n- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`\n- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`\n",
+  "text_content": "Manage Docs Versions Docusaurus can manage multiple versions of your docs. Create a docs version Release a version 1.0 of your project: The docs folder is copied into versioned_docs/version-1.0 and versions.json is created. Your docs now have 2 versions: - 1.0 at http://localhost:3000/docs/ for the version 1.0 docs - current at http://localhost:3000/docs/next/ for the upcoming, unreleased docs Add a Version Dropdown To navigate seamlessly across versions, add a version dropdown. Modify the docusaurus.config.js file: The docs version dropdown appears in your navbar: !Docs Version Dropdown Update an existing version It is possible to edit versioned docs in their respective folder: - versioned_docs/version-1.0/hello.md updates http://localhost:3000/docs/hello - docs/hello.md updates http://localhost:3000/docs/next/hello",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Manage Docs Versions",
+      "path": "manage-docs-versions.md > Manage Docs Versions",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "Create a docs version",
+      "path": "manage-docs-versions.md > Create a docs version",
+      "position": 4
+    },
+    {
+      "level": 2,
+      "text": "Add a Version Dropdown",
+      "path": "manage-docs-versions.md > Add a Version Dropdown",
+      "position": 19
+    },
+    {
+      "level": 2,
+      "text": "Update an existing version",
+      "path": "manage-docs-versions.md > Update an existing version",
+      "position": 45
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.890919",
+  "status": "SUCCESS"
+}

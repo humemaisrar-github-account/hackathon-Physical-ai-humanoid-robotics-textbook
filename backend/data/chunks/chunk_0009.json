@@ -1,0 +1,12 @@
+{
+  "chunk_id": "84d4dc89-6cdb-4735-ad1b-eefa0b087f3f",
+  "page_url": "https://local-content/module1/chapter1x",
+  "heading_path": "",
+  "content_raw": "take a significant amount of time to complete, such as navigating to a goal. An action client can send a goal to an action server, receive feedback on the progress of the goal, and get a final result. <Checkpoint> <p>What is the main difference between a ROS 2 topic and a service?</p> </Checkpoint> <Exercise> <p>Follow the official ROS 2 documentation to install ROS 2 and run the \"turtlesim\" simulator. Use the ros2 command-line tools to move the turtle around by publishing to the /turtle1/cmd_vel topic.</p> </Exercise> <Outcome> <p>You should now have a foundational understanding of the key communication mechanisms in ROS 2. You can use this knowledge to start building your own robotics applications.</p> </Outcome> <SuccessCriteria> <ul> <li>Successfully run a ROS 2 talker and listener.</li> <li>Use the ros2 command-line tool to inspect topics and services.</li> <li>Draw a diagram illustrating the difference between topics and services.</li> </ul> </SuccessCriteria>",
+  "token_count": 229,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

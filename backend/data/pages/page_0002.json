@@ -1,0 +1,46 @@
+{
+  "url": "https://local-content/appendix/referencesx",
+  "title": "References",
+  "content": "---\ntitle: \"References\"\n---\n\n# References\n\nThis page provides a list of references for further reading.\n\n## ROS 2\n\n-   [ROS 2 Documentation](https://docs.ros.org/en/humble/index.html)\n\n## Gazebo\n\n-   [Gazebo Simulator](https://gazebosim.org/)\n\n## MoveIt\n\n-   [MoveIt 2 Documentation](https://moveit.ros.org/)\n\n## Reinforcement Learning\n\n-   Sutton, R. S., & Barto, A. G. (2018). *Reinforcement learning: An introduction*. MIT press.\n\n## Robotics\n\n-   Siciliano, B., & Khatib, O. (Eds.). (2016). *Springer handbook of robotics*. Springer.\n",
+  "text_content": "References This page provides a list of references for further reading. ROS 2 - ROS 2 Documentation Gazebo - Gazebo Simulator MoveIt - MoveIt 2 Documentation Reinforcement Learning - Sutton, R. S., & Barto, A. G. (2018). Reinforcement learning: An introduction. MIT press. Robotics - Siciliano, B., & Khatib, O. (Eds.). (2016). Springer handbook of robotics. Springer.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "References",
+      "path": "references.mdx > References",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "ROS 2",
+      "path": "references.mdx > ROS 2",
+      "position": 4
+    },
+    {
+      "level": 2,
+      "text": "Gazebo",
+      "path": "references.mdx > Gazebo",
+      "position": 8
+    },
+    {
+      "level": 2,
+      "text": "MoveIt",
+      "path": "references.mdx > MoveIt",
+      "position": 12
+    },
+    {
+      "level": 2,
+      "text": "Reinforcement Learning",
+      "path": "references.mdx > Reinforcement Learning",
+      "position": 16
+    },
+    {
+      "level": 2,
+      "text": "Robotics",
+      "path": "references.mdx > Robotics",
+      "position": 20
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.855098",
+  "status": "SUCCESS"
+}

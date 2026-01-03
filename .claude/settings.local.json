@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python test_implementation.py)",
+      "Bash(pip install:*)",
+      "Bash(poetry install)"
+    ]
+  }
+}

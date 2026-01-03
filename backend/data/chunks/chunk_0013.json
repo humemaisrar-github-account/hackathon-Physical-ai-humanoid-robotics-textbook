@@ -1,0 +1,12 @@
+{
+  "chunk_id": "18992150-c7f7-4702-8b5c-cc98f0ba65d2",
+  "page_url": "https://local-content/module1/chapter3x",
+  "heading_path": "",
+  "content_raw": "What is a \"world\" file in Gazebo, and what does it typically define?</p> </Checkpoint> <Exercise> <p>Launch an empty Gazebo world. Use the Gazebo GUI to add simple shapes (like a box and a sphere) to the world. Apply different materials and colors to them.</p> </Exercise> <Outcome> <p>You are now able to create and interact with a basic simulation environment in Gazebo, and you understand how it connects to ROS 2.</p> </Outcome> <SuccessCriteria> <ul> <li>Launch Gazebo with a pre-built world.</li> <li>Spawn a URDF or SDF model into the simulation.</li> <li>Interact with the simulation using the Gazebo GUI.</li> </ul> </SuccessCriteria>",
+  "token_count": 175,
+  "overlap_with_previous": "",
+  "overlap_with_next": "",
+  "position_in_page": 1,
+  "metadata": {},
+  "status": "PENDING"
+}

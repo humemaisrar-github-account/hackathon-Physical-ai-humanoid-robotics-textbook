@@ -1,0 +1,40 @@
+{
+  "url": "https://local-content/appendix/troubleshootingx",
+  "title": "Troubleshooting",
+  "content": "---\ntitle: \"Troubleshooting\"\n---\n\n# Troubleshooting\n\nThis page provides solutions to common problems you may encounter while working through this textbook.\n\n## ROS 2 Installation Issues\n\n-   **Problem:** `ros2` command not found.\n    -   **Solution:** Make sure you have sourced your ROS 2 installation. You should add `source /opt/ros/<distro>/setup.bash` to your `~/.bashrc` file (replace `<distro>` with your ROS 2 distribution, e.g., `humble`).\n\n## Gazebo Issues\n\n-   **Problem:** Gazebo is running very slowly.\n    -   **Solution:** Gazebo can be computationally intensive. Make sure you are running it on a computer with a dedicated graphics card. You can also try reducing the `real_time_update_rate` in your world file.\n-   **Problem:** My robot model falls through the floor in Gazebo.\n    -   **Solution:** This is usually caused by incorrect collision geometry in your URDF/SDF file. Make sure that all the links in your model have a `<collision>` tag with valid geometry.\n\n## Nav2 Issues\n\n-   **Problem:** The robot is not moving when I send a navigation goal.\n    -   **Solution:** There are many possible causes for this. Check the following:\n        -   Is the Nav2 stack running correctly?\n        -   Is the robot localized correctly in the map?\n        -   Is there a valid path from the robot's current position to the goal?\n        -   Are the costmap parameters configured correctly?\n\n## MoveIt Issues\n\n-   **Problem:** MoveIt is unable to find an IK solution.\n    -   **Solution:** This can happen if the desired pose is unreachable or if the IK solver is not configured correctly. Try moving the goal pose to a different location. You can also try a different IK solver.\n",
+  "text_content": "Troubleshooting This page provides solutions to common problems you may encounter while working through this textbook. ROS 2 Installation Issues - Problem: ros2 command not found. - Solution: Make sure you have sourced your ROS 2 installation. You should add source /opt/ros/<distro>/setup.bash to your ~/.bashrc file (replace <distro> with your ROS 2 distribution, e.g., humble). Gazebo Issues - Problem: Gazebo is running very slowly. - Solution: Gazebo can be computationally intensive. Make sure you are running it on a computer with a dedicated graphics card. You can also try reducing the realtimeupdate_rate in your world file. - Problem: My robot model falls through the floor in Gazebo. - Solution: This is usually caused by incorrect collision geometry in your URDF/SDF file. Make sure that all the links in your model have a <collision> tag with valid geometry. Nav2 Issues - Problem: The robot is not moving when I send a navigation goal. - Solution: There are many possible causes for this. Check the following: - Is the Nav2 stack running correctly? - Is the robot localized correctly in the map? - Is there a valid path from the robot's current position to the goal? - Are the costmap parameters configured correctly? MoveIt Issues - Problem: MoveIt is unable to find an IK solution. - Solution: This can happen if the desired pose is unreachable or if the IK solver is not configured correctly. Try moving the goal pose to a different location. You can also try a different IK solver.",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Troubleshooting",
+      "path": "troubleshooting.mdx > Troubleshooting",
+      "position": 0
+    },
+    {
+      "level": 2,
+      "text": "ROS 2 Installation Issues",
+      "path": "troubleshooting.mdx > ROS 2 Installation Issues",
+      "position": 4
+    },
+    {
+      "level": 2,
+      "text": "Gazebo Issues",
+      "path": "troubleshooting.mdx > Gazebo Issues",
+      "position": 9
+    },
+    {
+      "level": 2,
+      "text": "Nav2 Issues",
+      "path": "troubleshooting.mdx > Nav2 Issues",
+      "position": 16
+    },
+    {
+      "level": 2,
+      "text": "MoveIt Issues",
+      "path": "troubleshooting.mdx > MoveIt Issues",
+      "position": 25
+    }
+  ],
+  "created_at": "2025-12-17T04:38:11.855673",
+  "status": "SUCCESS"
+}
