@@ -1,55 +1,47 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: 1.0.0 → 1.1.0
+Modified principles: [PRINCIPLE_1_NAME] → Reliability & Accuracy, [PRINCIPLE_2_NAME] → Production-Oriented Engineering, [PRINCIPLE_3_NAME] → Modular & Future-Ready Design, [PRINCIPLE_4_NAME] → Data Security & Privacy, [PRINCIPLE_5_NAME] → Context-Aware User Experience
+Added sections: Implementation Standards, Technical Constraints, Evaluation Criteria
+Removed sections: None
+Templates requiring updates: .specify/templates/plan-template.md (⚠ pending), .specify/templates/spec-template.md (⚠ pending), .specify/templates/tasks-template.md (⚠ pending)
+Follow-up TODOs: None
+-->
+# AI-Native Textbook Enhancement with Integrated RAG Chatbot, Personalization, and Multilingual Support Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Reliability & Accuracy
+All implemented features must operate consistently across the deployed Docusaurus textbook without disrupting existing content or navigation. All generated answers must be strictly grounded in retrieved textbook content, ensuring stable, accurate, and reliable responses that preserve the integrity of the educational material.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Production-Oriented Engineering
+The system must follow industry-grade architectural patterns for RAG pipelines, backend APIs, and data storage. All components must be designed with production deployment in mind, including proper error handling, monitoring, and maintainability standards.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Modular & Future-Ready Design
+The architecture should support easy extension, maintenance, and feature growth with minimal refactoring. Components must be loosely coupled and highly cohesive to enable future enhancements without requiring major system rewrites.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Data Security & Privacy
+User-related data (background information, preferences, session logs) must be handled securely and responsibly. All data collection, storage, and processing must comply with applicable privacy regulations and security best practices.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Context-Aware User Experience
+Chatbot responses must remain tightly aligned with chapter context, selected text, and retrieved source material. The user interface must provide a seamless experience that enhances rather than disrupts the learning process.
 
-### [PRINCIPLE_6_NAME]
+### Implementation Standards for RAG
+The chatbot must be implemented using OpenAI Agents (Python SDK, ChatKit optional), FastAPI backend, Neon Serverless Postgres, and Qdrant Cloud (Free Tier). The system must support two interaction modes: full-textbook question answering and selected-text-only question answering.
 
+## Textbook Integration Requirements
+The chatbot must be embedded directly into the Docusaurus-based textbook. All UI elements (chat window, buttons, controls) must visually align with the textbook's theme. The integration must not interrupt the reading flow or accessibility.
 
-[PRINCIPLE__DESCRIPTION]
+## Technical Constraints
+Frontend: Docusaurus, Backend: FastAPI, Database: Neon Serverless Postgres, Vector Database: Qdrant (Free Tier), AI Layer: OpenAI Agents (Python SDK, ChatKit optional). Bonus features must only be accessible to authenticated users. The complete system must be deployable on free or low-cost tiers suitable for students.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Optional Feature Standards
+Authentication must use BetterAuth and collect basic software and hardware background during signup. Chapter personalization must preserve technical accuracy at all times. Urdu translation must preserve technical meaning, formatting and structure, and readability and clarity.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Evaluation Criteria
+Core functionality must include a fully functional RAG chatbot integrated into the textbook, support for both full-book and selected-text-only modes, and stable, accurate, and grounded responses.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Constitution supersedes all other practices. All implementations must verify compliance with these principles. Amendments require documentation, approval, and migration plan if applicable. All PRs/reviews must verify compliance with these principles. Complexity must be justified with clear benefit to the educational experience.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: TODO(RATIFICATION_DATE): Original adoption date unknown | **Last Amended**: 2025-12-28

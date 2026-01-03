@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Welcome to Physical AI & Humanoid Robotics
 
 This textbook explores the fascinating intersection of Artificial Intelligence and Robotics, focusing on embodied intelligence and the development of humanoid systems.
