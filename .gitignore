@@ -1,0 +1,148 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+.ENV.bak/
+.ENV.save/
+.ENV.save.*
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.DS_Store
+.pytest_cache/
+.hypothesis/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+.env.bak/
+.env.save/
+.env.save.*
+
+# FastAPI / uvicorn
+*.db
+*.db-journal
+
+# Node.js/JavaScript (from frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnp/
+.pnp.js
+web-build/
+dist/
+build/
+coverage/
+.nyc_output/
+.nyc_output/*
+.fusebox/
+.happypack/
+.istanbul/
+.playground/
+.next/
+.nuxt/
+.vuepress/dist
+static-cache
+.cache/
+.parcel-cache
+jspm_packages/
+sysroot/
+typings/
+jspm_packages/
+node_modules/
+bower_components/
+*.min.js
+*.min.css
+testem.log
+/dest
+/dist
+/coverage
+/coverage/*
+/lib-cov
+/bower_components
+*.swp
+*.swo
+*~
+
+# Docusaurus
+.docusaurus/
+.cache/
+.sass-cache/
+.eslintcache
+.output/
+.build/
+.temp/
+.npm/
+.npmrc
+.yarn/
+.yarnrc
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+coverage/lcov-report/
+.pytest_cache/
+.hypothesis/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Docker (if used)
+.dockerenv
+.dockerignore
+
+# Local development
+.local/
+dev/
