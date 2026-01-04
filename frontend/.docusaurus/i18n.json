@@ -1,0 +1,31 @@
+{
+  "defaultLocale": "en",
+  "locales": [
+    "en",
+    "ur"
+  ],
+  "path": "i18n",
+  "currentLocale": "en",
+  "localeConfigs": {
+    "en": {
+      "label": "English",
+      "direction": "ltr",
+      "htmlLang": "en",
+      "calendar": "gregory",
+      "path": "en",
+      "translate": false,
+      "url": "https://example.com",
+      "baseUrl": "/"
+    },
+    "ur": {
+      "label": "اردو",
+      "direction": "rtl",
+      "htmlLang": "ur",
+      "calendar": "gregory",
+      "path": "ur",
+      "translate": false,
+      "url": "https://example.com",
+      "baseUrl": "/ur/"
+    }
+  }
+}

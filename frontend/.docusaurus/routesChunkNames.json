@@ -1,0 +1,132 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/markdown-page-3d7": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-pagea-74-7b5"
+    },
+    "content": "content---markdown-page-393-028"
+  },
+  "/docs-735": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-caf": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-157": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/-2d9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-c-37-4d0"
+  },
+  "/docs/capstone/capstone-overview-e77": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-capstone-capstone-overview-9-eb-e1b"
+  },
+  "/docs/category/capstone-autonomous-humanoid-project-adc": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-capstone-autonomous-humanoid-project-36-d-858"
+  },
+  "/docs/category/module-1-ros-2--robotic-nervous-system-52b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-module-1-ros-2-robotic-nervous-system-568-e75"
+  },
+  "/docs/category/module-2-digital-twin--gazebo--unity-d5b": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-module-2-digital-twin-gazebo-unityfc-4-620"
+  },
+  "/docs/category/module-3-nvidia-isaac--ai-robot-brain-614": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-module-3-nvidia-isaac-ai-robot-braind-6-a-9b0"
+  },
+  "/docs/category/module-4-vla-systems--vision-language-action-aa9": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-module-4-vla-systems-vision-language-action-6-ad-ff7"
+  },
+  "/docs/chatbot-587": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-chatbot-170-cf2"
+  },
+  "/docs/glossary-ff0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-glossarye-74-cec"
+  },
+  "/docs/module1-ros/introduction-to-ros-a76": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-introduction-to-ros-617-09c"
+  },
+  "/docs/module1-ros/nodes-and-topics-44c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-ros-nodes-and-topicsf-01-d9e"
+  },
+  "/docs/module2-digital-twin/gazebo-basics-765": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-digital-twin-gazebo-basics-5-d-3-865"
+  },
+  "/docs/module2-digital-twin/understanding-simulation-7c5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-digital-twin-understanding-simulation-8-a-2-2b5"
+  },
+  "/docs/module3-isaac/intro-to-isaac-sim-974": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-isaac-intro-to-isaac-sim-56-a-766"
+  },
+  "/docs/module4-vla/vla-introduction-5ba": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-vla-vla-introductiona-51-0a2"
+  },
+  "/-e5f": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---markdown-pagea-74-7b5"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

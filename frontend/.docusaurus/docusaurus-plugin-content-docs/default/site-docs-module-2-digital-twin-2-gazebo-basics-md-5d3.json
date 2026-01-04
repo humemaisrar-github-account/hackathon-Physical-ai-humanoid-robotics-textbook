@@ -1,0 +1,27 @@
+{
+  "id": "module2-digital-twin/gazebo-basics",
+  "title": "2. Gazebo Basics for Robotics Simulation",
+  "description": "Learning Objectives",
+  "source": "@site/docs/module2-digital-twin/2-gazebo-basics.md",
+  "sourceDirName": "module2-digital-twin",
+  "slug": "/module2-digital-twin/gazebo-basics",
+  "permalink": "/docs/module2-digital-twin/gazebo-basics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module2-digital-twin/2-gazebo-basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "2. Gazebo Basics for Robotics Simulation"
+  },
+  "sidebar": "modulesSidebar",
+  "previous": {
+    "title": "1. Understanding Robotic Simulation",
+    "permalink": "/docs/module2-digital-twin/understanding-simulation"
+  },
+  "next": {
+    "title": "Module 3: NVIDIA Isaac — AI Robot Brain",
+    "permalink": "/docs/category/module-3-nvidia-isaac--ai-robot-brain"
+  }
+}

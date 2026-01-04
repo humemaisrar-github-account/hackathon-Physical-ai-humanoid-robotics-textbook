@@ -1,0 +1,26 @@
+{
+  "id": "chatbot",
+  "title": "RAG Chatbot",
+  "description": "Welcome to the RAG Chatbot interface! This chatbot can answer questions about the book content using retrieval-augmented generation (RAG).",
+  "source": "@site/docs/chatbot.md",
+  "sourceDirName": ".",
+  "slug": "/chatbot",
+  "permalink": "/docs/chatbot",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/chatbot.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "RAG Chatbot"
+  },
+  "sidebar": "modulesSidebar",
+  "previous": {
+    "title": "1. Capstone Project Overview",
+    "permalink": "/docs/capstone/capstone-overview"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/docs/glossary"
+  }
+}

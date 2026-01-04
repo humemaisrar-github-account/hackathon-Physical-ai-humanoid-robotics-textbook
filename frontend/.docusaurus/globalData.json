@@ -1,0 +1,103 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "capstone/capstone-overview",
+              "path": "/docs/capstone/capstone-overview",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "chatbot",
+              "path": "/docs/chatbot",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "glossary",
+              "path": "/docs/glossary",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/docs/",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "module1-ros/introduction-to-ros",
+              "path": "/docs/module1-ros/introduction-to-ros",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "module1-ros/nodes-and-topics",
+              "path": "/docs/module1-ros/nodes-and-topics",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "module2-digital-twin/gazebo-basics",
+              "path": "/docs/module2-digital-twin/gazebo-basics",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "module2-digital-twin/understanding-simulation",
+              "path": "/docs/module2-digital-twin/understanding-simulation",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "module3-isaac/intro-to-isaac-sim",
+              "path": "/docs/module3-isaac/intro-to-isaac-sim",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "module4-vla/vla-introduction",
+              "path": "/docs/module4-vla/vla-introduction",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "/category/module-1-ros-2--robotic-nervous-system",
+              "path": "/docs/category/module-1-ros-2--robotic-nervous-system",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "/category/module-2-digital-twin--gazebo--unity",
+              "path": "/docs/category/module-2-digital-twin--gazebo--unity",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "/category/module-3-nvidia-isaac--ai-robot-brain",
+              "path": "/docs/category/module-3-nvidia-isaac--ai-robot-brain",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "/category/module-4-vla-systems--vision-language-action",
+              "path": "/docs/category/module-4-vla-systems--vision-language-action",
+              "sidebar": "modulesSidebar"
+            },
+            {
+              "id": "/category/capstone-autonomous-humanoid-project",
+              "path": "/docs/category/capstone-autonomous-humanoid-project",
+              "sidebar": "modulesSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "modulesSidebar": {
+              "link": {
+                "path": "/docs/category/module-1-ros-2--robotic-nervous-system",
+                "label": "Module 1: ROS 2 — Robotic Nervous System"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

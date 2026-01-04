@@ -1,0 +1,24 @@
+{
+  "id": "glossary",
+  "title": "Glossary",
+  "description": "This section provides definitions for key terms used throughout the \"Physical AI & Humanoid Robotics\" textbook.",
+  "source": "@site/docs/glossary.md",
+  "sourceDirName": ".",
+  "slug": "/glossary",
+  "permalink": "/docs/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/glossary.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "modulesSidebar",
+  "previous": {
+    "title": "RAG Chatbot",
+    "permalink": "/docs/chatbot"
+  },
+  "next": {
+    "title": "Home",
+    "permalink": "/docs/"
+  }
+}
